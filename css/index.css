@@ -1,0 +1,134 @@
+/* css/index.css */
+body {
+    background-color: white;
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    margin: 0;
+    color: #111827;
+  }
+  
+  a { text-decoration: none; }
+  
+  /* --- HEADER / NAVBAR --- */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.75rem 1rem;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-icon {
+    width: 1.5rem; /* Adjusted for your icon */
+    height: 1.5rem;
+  }
+  
+  .header-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .nav-links {
+    display: none; /* Mobile first */
+  }
+  
+  /* Desktop Header */
+  @media (min-width: 768px) {
+    .header { padding: 0.75rem 2.5rem; }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #6b7280;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #2563eb;
+    }
+  }
+  
+  /* --- HERO SECTION --- */
+  .hero {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vh; /* Takes up nice space */
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .hero p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  /* --- CHAT INPUT STYLING (Adapted from Old Search Box) --- */
+  .chat-input-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s;
+  }
+  
+  .chat-input-container:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+  }
+  
+  #chat-input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  #find-route-btn {
+    padding: 0 1.5rem;
+    background-color: #111827;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #find-route-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .examples {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #9ca3af;
+  }
+  
+  /* Desktop Hero Adjustments */
+  @media (min-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .chat-input-container { height: 3.5rem; }
+  }

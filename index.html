@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGo - Islamabad Metro Route Finder</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?display=swap&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+    <style>
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            height: 300px;
+            overflow-y: auto;
+            padding: 1rem;
+            background: #f9fafb;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.user {
+            text-align: right;
+        }
+
+        .message.bot {
+            text-align: left;
+        }
+
+        .message-bubble {
+            display: inline-block;
+            padding: 0.75rem 1rem;
+            border-radius: 1rem;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .message.user .message-bubble {
+            background: #2563eb;
+            color: white;
+        }
+
+        .message.bot .message-bubble {
+            background: white;
+            color: #111827;
+            border: 1px solid #e5e7eb;
+        }
+
+        .chat-input-wrapper {
+            display: flex;
+            padding: 1rem;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        #chat-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        #chat-input:focus {
+            border-color: #2563eb;
+        }
+
+        #send-btn {
+            margin-left: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: #22c55e;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #send-btn:hover {
+            background: #16a34a;
+        }
+
+        #send-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .suggestion-chips {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .chip {
+            padding: 0.5rem 1rem;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+
+        .chip:hover {
+            background: #dbeafe;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="images/location.png" alt="Logo" class="logo-icon">
+            <span class="header-title">UniGo</span>
+        </div>
+        <nav class="nav-links"><a href="#" class="active">Home</a><a href="#">Help</a></nav>
+    </header>
+
+    <main class="hero">
+        <h1>Where do you want to go?</h1>
+        <p>Just tell me in plain English - I'll figure out the rest!</p>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    <div class="message-bubble">
+                        👋 Hi! I'm your metro guide. Try saying:<br>
+                        <div class="suggestion-chips">
+                            <span class="chip" onclick="useSuggestion(this)">NUST to PIMS</span>
+                            <span class="chip" onclick="useSuggestion(this)">Fast route from Faizabad to F-9 Park</span>
+                            <span class="chip" onclick="useSuggestion(this)">Cheap route from NUST to PIMS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-wrapper">
+                <input id="chat-input" type="text" placeholder="e.g., NUST to PIMS Hospital" autocomplete="off">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        <p class="examples" style="margin-top: 1rem;">💡 Tip: You can say "fast", "cheap", "avoid [station]"</p>
+    </main>
+
+    <script type="module">
+        import IntentParser from './src/js/nlp/intentParser.js';
+        import AStarPathfinder from './src/js/core/astar.js';
+
+        let parser, pathfinder, graph;
+
+        async function init() {
+            try {
+                const response = await fetch('data/reliable_metro_graph.json');
+                graph = await response.json();
+                const stations = Object.values(graph.nodes).map(n => ({ id: n.id, name: n.name }));
+                parser = new IntentParser(stations);
+                pathfinder = new AStarPathfinder(graph);
+                console.log('✅ Chatbot initialized with', stations.length, 'stations');
+            } catch (error) { console.error('Failed to initialize:', error); addBotMessage('❌ Error loading station data.'); }
+        }
+
+        function addMessage(type, text) {
+            const messagesDiv = document.getElementById('chat-messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+            bubble.innerHTML = text;
+            messageDiv.appendChild(bubble);
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+        function addUserMessage(text) { addMessage('user', text); }
+        function addBotMessage(text) { addMessage('bot', text); }
+
+        async function handleUserInput(text) {
+            if (!text.trim()) return;
+            addUserMessage(text);
+            const parsed = parser.parse(text);
+
+            if (!parsed.source || !parsed.destination) {
+                let errorMsg = '🤔 ';
+                if (!parsed.source && !parsed.destination) errorMsg += 'Please tell me where you\'re starting from and where you want to go.';
+                else if (!parsed.source) errorMsg += `I see you want to go to <b>${parsed.destinationName}</b>, but where are you starting from?`;
+                else errorMsg += `I see you\'re at <b>${parsed.sourceName}</b>, but where do you want to go?`;
+                addBotMessage(errorMsg);
+                return;
+            }
+
+            addBotMessage(`✅ From: <b>${parsed.sourceName}</b> → To: <b>${parsed.destinationName}</b><br>🚀 Strategy: ${parsed.strategy === 'budget' ? 'Cheapest' : 'Fastest'}`);
+
+            setTimeout(() => {
+                addBotMessage('🔍 Finding route...');
+                setTimeout(() => {
+                    const result = pathfinder.findPath(parsed.source, parsed.destination, { strategy: parsed.strategy, avoidNodes: parsed.entities.avoid });
+                    if (result) {
+                        addBotMessage(`✅ Route found! ${result.path.length} stops, ~${Math.round(result.cost)} min<br>Taking you to the map...`);
+                        localStorage.setItem('unigo_trip', JSON.stringify({ start: parsed.source, end: parsed.destination, startName: parsed.sourceName, endName: parsed.destinationName, strategy: parsed.strategy }));
+                        setTimeout(() => { window.location.href = 'route.html'; }, 2000);
+                    } else { addBotMessage('❌ No route found.'); }
+                }, 500);
+            }, 300);
+        }
+
+        document.getElementById('send-btn').addEventListener('click', () => { const input = document.getElementById('chat-input'); handleUserInput(input.value); input.value = ''; });
+        document.getElementById('chat-input').addEventListener('keypress', (e) => { if (e.key === 'Enter') { const input = document.getElementById('chat-input'); handleUserInput(input.value); input.value = ''; } });
+        window.useSuggestion = function (chip) { handleUserInput(chip.textContent); };
+        init();
+    </script>
+</body>
+
+</html>

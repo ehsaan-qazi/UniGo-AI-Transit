@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniGo - Route Details</title>
+  <link rel="stylesheet" href="src/css/route.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo-icon">
+        <img src="images/location.png" alt="UniGo Logo" class="logo-icon" loading="lazy">
+      </div>
+      <h2 class="header-title">UniGo</h2>
+    </div>
+
+    <div class="header-right">
+      <nav class="nav-links">
+        <a class="abc" href="index.html">Home</a>
+        <a class="abc" href="search.html">Search</a>
+        <a class="abc" href="about.html">About</a>
+        <a class="abc" href="route.html">Route</a>
+        <a class="abc" href="profile.html">Profile</a>
+      </nav>
+      <a href="about.html" class="help-btn">Help</a>
+      <div class="avatar"
+        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCc3_VF5bM9cOgUg22sIOumMzYRiXGL9Yn2x6N4_pFvQZ0F6m5CsB4-7oDEccNjJ1EcJ6VHKQkj3GOC25bgfR0Jw9MEtYVILBeNij_oDIX9a9QYXVBMvCEuwIGHLDmj4iodq3QqYuvyWF8PD5_CTS3XmwwG95nge7d9BKHmDhEbWCCnwJKytiDupWRNkbCA0imit-fuZdqGPlLP-eX5KqLboyE6p4aPv-v37SzQ9oCFD0wC6RYa-XroG_XjFUT5J__oXnbl2fJ5_Fs");'>
+      </div>
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="overlay-menu">
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="about.html">About</a>
+    <a href="route.html">Route</a>
+    <a href="profile.html">Profile</a>
+    <a href="about.html">Help</a>
+  </div>
+
+  <!-- Route Details -->
+  <main class="route-container">
+    <div class="page-heading">
+      <h1>Route: NUST to Bahria University</h1>
+      <p>Islamabad - Estimated 20 mins</p>
+    </div>
+
+    <div class="map-placeholder">
+      <p>Map will be displayed here<br>I'm working on it :)
+      </p>
+    </div>
+
+    <div class="route-info">
+      <h3>Stops:</h3>
+      <ul>
+        <li>NUST Gate 1</li>
+        <li>G-11 Markaz</li>
+        <li>Bahria University Main Gate</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="profile.html">Profile</a>
+      <a href="search.html">Search</a>
+      <a href="about.html">About</a>
+      <a href="route.html">Route</a>
+    </div>
+    <p>© Made by M. Ehsaan ur Rehman Qazi</p>
+  </footer>
+
+  <!-- UniGo Scripts -->
+  <script src="config.js"></script>
+  <script src="src/js/utils/helpers.js"></script>
+  <script src="src/js/utils/routeParser.js"></script>
+  <script src="src/js/core/dataLoader.js"></script>
+  <script src="src/js/components/ui.js"></script>
+  <script src="src/js/main.js"></script>
+
+  <!-- Route Page Specific Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const routeData = UniGoUI.loadRouteFromStorage();
+
+      if (routeData) {
+        const pageHeadingH1 = document.querySelector('.page-heading h1');
+        if (pageHeadingH1) {
+          pageHeadingH1.textContent = `Route: ${routeData.fromLabel} to ${routeData.toLabel}`;
+        }
+
+        const routeInfoUl = document.querySelector('.route-info ul');
+        if (routeInfoUl) {
+          routeInfoUl.innerHTML = ''; // Clear dummy data
+          routeData.steps.forEach((step, i) => {
+            const stepCard = UniGoUI.createStepCard(step, i);
+            routeInfoUl.appendChild(stepCard);
+          });
+        }
+      } else {
+        // Fallback if no route data is found
+        const pageHeadingH1 = document.querySelector('.page-heading h1');
+        if (pageHeadingH1) {
+          pageHeadingH1.textContent = 'Route Details Not Available';
+        }
+        const pageHeadingP = document.querySelector('.page-heading p');
+        if (pageHeadingP) {
+          pageHeadingP.textContent = 'Please search for a route from the homepage.';
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
