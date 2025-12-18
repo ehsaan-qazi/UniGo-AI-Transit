@@ -1,126 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniGo - Route Details</title>
-    <link rel="stylesheet" href="css/route.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?display=swap&family=Plus+Jakarta+Sans:wght@400;500;700;800">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniGo - Route Details</title>
+  <link rel="stylesheet" href="css/route.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Plus+Jakarta+Sans:wght@400;500;700;800">
 </head>
-
 <body>
-    <header class="header">
-        <div class="header-left">
-            <div class="logo-wrapper"><img src="images/location.png" alt="Logo" class="logo-icon"></div>
-            <h2 class="header-title">UniGo</h2>
-        </div>
-        <div class="header-right">
-            <nav class="nav-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link active"
-                    href="route.html">Route</a></nav><a href="index.html" class="help-btn">New Search</a>
-        </div>
-    </header>
+  <header class="header">
+    <div class="header-left"><div class="logo-wrapper"><img src="images/location.png" alt="Logo" class="logo-icon"></div><h2 class="header-title">UniGo</h2></div>
+    <div class="header-right"><nav class="nav-links"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="route.html">Route</a></nav><a href="index.html" class="help-btn">New Search</a></div>
+  </header>
 
-    <main class="route-container">
-        <div class="page-heading">
-            <h1 id="route-title">Route: Loading...</h1>
-            <p id="route-meta">Calculating...</p>
-        </div>
-        <div class="map-container" id="map"></div>
-        <div class="route-info">
-            <h3>Stops:</h3>
-            <div id="route-steps">
-                <div class="loading-placeholder">
-                    <p>🔍 Finding the best route...</p>
-                </div>
-            </div>
-        </div>
-    </main>
+  <main class="route-container">
+    <div class="page-heading"><h1 id="route-title">Route: Loading...</h1><p id="route-meta">Calculating...</p></div>
+    <div class="map-container" id="map"></div>
+    <div class="route-info"><h3>Buses to Take:</h3><div id="route-steps"><div class="loading-placeholder"><p>🔍 Finding the best route...</p></div></div></div>
+  </main>
 
-    <footer class="footer">
-        <div class="footer-links"><a href="index.html">Home</a><a href="route.html">Route</a></div>
-        <p>© Made by M. Ehsaan ur Rehman Qazi</p>
-    </footer>
+  <footer class="footer"><div class="footer-links"><a href="index.html">Home</a><a href="route.html">Route</a></div><p>© Made by M. Ehsaan ur Rehman Qazi</p></footer>
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script type="module">
-        import AStarPathfinder from './src/js/core/astar.js';
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module">
+    import AStarPathfinder from './src/js/core/astar.js';
 
-        const BUS_IMAGES = {
-            'fr_01': 'images/green-feeders/fr-01.png', 'fr_02': 'images/green-feeders/fr-02.png', 'fr_03a': 'images/green-feeders/fr-03a.png',
-            'fr_04': 'images/green-feeders/fr-04.png', 'fr_04a': 'images/green-feeders/fr-04a.png', 'fr_05': 'images/green-feeders/fr-05.png',
-            'fr_06': 'images/green-feeders/fr-06.png', 'fr_07': 'images/green-feeders/fr-07.png', 'fr_08a': 'images/green-feeders/fr-08a.png',
-            'fr_08c': 'images/green-feeders/fr-08c.png', 'fr_09': 'images/green-feeders/fr-09.png', 'fr_13': 'images/green-feeders/fr-13.png',
-            'orange_line': 'images/orange-line.png', 'red_line': 'images/red-line.jpg', 'green_line': 'images/green-line.jpeg', 'default': 'images/green-line.jpeg'
-        };
+    const BUS_IMAGES = {
+      'fr_01': 'images/green-feeders/fr-01.png', 'fr_02': 'images/green-feeders/fr-02.png', 'fr_03a': 'images/green-feeders/fr-03a.png',
+      'fr_04': 'images/green-feeders/fr-04.png', 'fr_04a': 'images/green-feeders/fr-04a.png', 'fr_05': 'images/green-feeders/fr-05.png',
+      'fr_06': 'images/green-feeders/fr-06.png', 'fr_07': 'images/green-feeders/fr-07.png', 'fr_08a': 'images/green-feeders/fr-08a.png',
+      'fr_08c': 'images/green-feeders/fr-08c.png', 'fr_09': 'images/green-feeders/fr-09.png', 'fr_13': 'images/green-feeders/fr-13.png',
+      'orange_line': 'images/orange-line.png', 'red_line': 'images/red-line.jpg', 'green_line': 'images/green-line.jpeg', 'default': 'images/green-line.jpeg'
+    };
 
-        function formatRouteId(routeId) { return routeId ? routeId.replace(/_/g, ' ').replace(/\bfr\b/gi, 'FR-').replace(/\b(\w)/g, l => l.toUpperCase()) : 'Metro'; }
-        function getBusImage(routeId) { return BUS_IMAGES[routeId] || BUS_IMAGES['default']; }
+    function formatRouteId(routeId) { return routeId ? routeId.replace(/_/g, ' ').replace(/\bfr\b/gi, 'FR-').replace(/\b(\w)/g, l => l.toUpperCase()) : 'Metro'; }
+    function getBusImage(routeId) { return BUS_IMAGES[routeId] || BUS_IMAGES['default']; }
 
-        function createStepCard(routeId, fromStation, toStation, index) {
-            const card = document.createElement('div'); card.className = 'step-card';
-            const imgContainer = document.createElement('div'); imgContainer.className = 'bus-img-container';
-            const img = document.createElement('img'); img.src = getBusImage(routeId); img.alt = `${formatRouteId(routeId)} Bus`; img.className = 'bus-img'; img.loading = 'lazy';
-            imgContainer.appendChild(img);
-            const info = document.createElement('p'); info.className = 'result-info-p'; info.innerHTML = `<strong>${formatRouteId(routeId)}</strong> from ${fromStation} → ${toStation}`;
-            card.appendChild(imgContainer); card.appendChild(info);
-            setTimeout(() => { card.classList.add('show'); }, 100 * index);
-            return card;
-        }
+    function createStepCard(routeId, fromStation, toStation, index) {
+      const card = document.createElement('div'); card.className = 'step-card';
+      const imgContainer = document.createElement('div'); imgContainer.className = 'bus-img-container';
+      const img = document.createElement('img'); img.src = getBusImage(routeId); img.alt = `${formatRouteId(routeId)} Bus`; img.className = 'bus-img'; img.loading = 'lazy';
+      imgContainer.appendChild(img);
+      const info = document.createElement('p'); info.className = 'result-info-p'; info.innerHTML = `<strong>${formatRouteId(routeId)}</strong> from ${fromStation} → ${toStation}`;
+      card.appendChild(imgContainer); card.appendChild(info);
+      setTimeout(() => { card.classList.add('show'); }, 150 * index);
+      return card;
+    }
 
-        function parseRouteSegments(path, graph) {
-            const segments = []; let currentRoute = null, segmentStart = null;
-            for (let i = 0; i < path.length - 1; i++) {
-                const fromId = path[i], toId = path[i + 1];
-                const adjacency = graph.adjacency_list[fromId]; if (!adjacency) continue;
-                const connection = adjacency.find(conn => conn.neighbor === toId && !conn.is_transfer);
-                if (connection) {
-                    const routeId = connection.route_id;
-                    if (routeId !== currentRoute) {
-                        if (currentRoute && segmentStart) { segments.push({ routeId: currentRoute, from: segmentStart, to: fromId }); }
-                        currentRoute = routeId; segmentStart = fromId;
-                    }
-                }
-            }
-            if (currentRoute && segmentStart) { segments.push({ routeId: currentRoute, from: segmentStart, to: path[path.length - 1] }); }
-            return segments;
-        }
+    let map;
+    function initMap() { map = L.map('map').setView([33.6844, 73.0479], 12); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map); }
 
-        let map;
-        function initMap() { map = L.map('map').setView([33.6844, 73.0479], 12); L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map); }
+    function displayRouteOnMap(pathIds, nodes) {
+      const latlngs = pathIds.map(id => [nodes[id].latitude, nodes[id].longitude]);
+      const polyline = L.polyline(latlngs, { color: '#22c55e', weight: 5, opacity: 0.8 }).addTo(map);
+      const startNode = nodes[pathIds[0]], endNode = nodes[pathIds[pathIds.length - 1]];
+      L.marker([startNode.latitude, startNode.longitude], { icon: L.divIcon({ className: 'custom-marker', html: '<div style="background:#22c55e;color:white;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:12px;">📍 Start</div>', iconSize: null }) }).addTo(map);
+      L.marker([endNode.latitude, endNode.longitude], { icon: L.divIcon({ className: 'custom-marker', html: '<div style="background:#ef4444;color:white;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:12px;">🎯 End</div>', iconSize: null }) }).addTo(map);
+      map.fitBounds(polyline.getBounds(), { padding: [30, 30] });
+    }
 
-        function displayRouteOnMap(pathIds, nodes) {
-            const latlngs = pathIds.map(id => [nodes[id].latitude, nodes[id].longitude]);
-            const polyline = L.polyline(latlngs, { color: '#22c55e', weight: 5, opacity: 0.8 }).addTo(map);
-            const startNode = nodes[pathIds[0]], endNode = nodes[pathIds[pathIds.length - 1]];
-            L.marker([startNode.latitude, startNode.longitude], { icon: L.divIcon({ className: 'custom-marker', html: '<div style="background:#22c55e;color:white;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:12px;">📍 Start</div>', iconSize: null }) }).addTo(map);
-            L.marker([endNode.latitude, endNode.longitude], { icon: L.divIcon({ className: 'custom-marker', html: '<div style="background:#ef4444;color:white;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:12px;">🎯 End</div>', iconSize: null }) }).addTo(map);
-            map.fitBounds(polyline.getBounds(), { padding: [30, 30] });
-        }
+    document.addEventListener('DOMContentLoaded', async () => {
+      const routeTitle = document.getElementById('route-title'), routeMeta = document.getElementById('route-meta'), routeSteps = document.getElementById('route-steps');
+      initMap();
+      const tripData = JSON.parse(localStorage.getItem('unigo_trip'));
+      if (!tripData) { routeTitle.textContent = 'Route Not Found'; routeMeta.textContent = 'Please search for a route.'; routeSteps.innerHTML = '<p class="error-msg">No route data. <a href="index.html">Search again</a></p>'; return; }
+      routeTitle.textContent = `Route: ${tripData.startName} to ${tripData.endName}`;
 
-        document.addEventListener('DOMContentLoaded', async () => {
-            const routeTitle = document.getElementById('route-title'), routeMeta = document.getElementById('route-meta'), routeSteps = document.getElementById('route-steps');
-            initMap();
-            const tripData = JSON.parse(localStorage.getItem('unigo_trip'));
-            if (!tripData) { routeTitle.textContent = 'Route Not Found'; routeMeta.textContent = 'Please search for a route.'; routeSteps.innerHTML = '<p class="error-msg">No route data. <a href="index.html">Search again</a></p>'; return; }
-            routeTitle.textContent = `Route: ${tripData.startName} to ${tripData.endName}`;
-            try {
-                const response = await fetch('data/reliable_metro_graph.json'); const graph = await response.json();
-                const pathfinder = new AStarPathfinder(graph);
-                const result = pathfinder.findPath(tripData.start, tripData.end, { strategy: tripData.strategy || 'time' });
-                if (result) {
-                    routeMeta.textContent = `Islamabad - ${result.path.length} stops, ~${Math.round(result.cost)} mins`;
-                    displayRouteOnMap(result.path, graph.nodes);
-                    const segments = parseRouteSegments(result.path, graph);
-                    routeSteps.innerHTML = '';
-                    if (segments.length === 0) { routeSteps.appendChild(createStepCard('default', tripData.startName, tripData.endName, 0)); }
-                    else { segments.forEach((seg, i) => { routeSteps.appendChild(createStepCard(seg.routeId, graph.nodes[seg.from]?.name || seg.from, graph.nodes[seg.to]?.name || seg.to, i)); }); }
-                } else { routeMeta.textContent = 'No route found'; routeSteps.innerHTML = '<p class="error-msg">❌ Could not find a route.</p>'; }
-            } catch (error) { console.error(error); routeMeta.textContent = 'Error'; routeSteps.innerHTML = '<p class="error-msg">❌ An error occurred.</p>'; }
-        });
-    </script>
+      try {
+        const response = await fetch('data/reliable_metro_graph.json'); const graph = await response.json();
+        const pathfinder = new AStarPathfinder(graph);
+        const result = pathfinder.findPath(tripData.start, tripData.end, { strategy: tripData.strategy || 'time' });
+        
+        if (result) {
+          routeMeta.textContent = `${result.path.length} stops • ${result.transfers} transfer${result.transfers !== 1 ? 's' : ''} • ~${Math.round(result.cost)} mins`;
+          displayRouteOnMap(result.path, graph.nodes);
+          routeSteps.innerHTML = '';
+
+          // Use A* returned routeSegments for accurate display
+          if (result.routeSegments && result.routeSegments.length > 0) {
+            result.routeSegments.forEach((seg, i) => {
+              const fromName = graph.nodes[seg.fromNode]?.name || seg.fromNode;
+              const toName = graph.nodes[seg.toNode]?.name || seg.toNode;
+              routeSteps.appendChild(createStepCard(seg.routeId, fromName, toName, i));
+            });
+          } else {
+            routeSteps.appendChild(createStepCard('default', tripData.startName, tripData.endName, 0));
+          }
+        } else { routeMeta.textContent = 'No route found'; routeSteps.innerHTML = '<p class="error-msg">❌ Could not find a route.</p>'; }
+      } catch (error) { console.error(error); routeMeta.textContent = 'Error'; routeSteps.innerHTML = '<p class="error-msg">❌ An error occurred.</p>'; }
+    });
+  </script>
 </body>
-
 </html>
