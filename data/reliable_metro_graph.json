@@ -651,8 +651,8 @@
     "youth_hostel": {
       "id": "youth_hostel",
       "name": "Youth Hostel",
-      "latitude": 33.715,
-      "longitude": 73.064,
+      "latitude": 33.710164342249236,
+      "longitude": 73.09158573492675,
       "routes_serving": [
         "fr_04"
       ],
@@ -1761,8 +1761,8 @@
     "zero_point": {
       "id": "zero_point",
       "name": "Zero Point",
-      "latitude": 33.69661193644461,
-      "longitude": 73.07012632570736,
+      "latitude": 33.69562710976255,
+      "longitude": 73.06924045318415,
       "routes_serving": [
         "fr_08a"
       ],
@@ -1776,8 +1776,8 @@
     "cda": {
       "id": "cda",
       "name": "CDA",
-      "latitude": 33.6413010371886,
-      "longitude": 73.04411054651209,
+      "latitude": 33.70028997747736,
+      "longitude": 73.07808355040576,
       "routes_serving": [
         "fr_08a"
       ],
