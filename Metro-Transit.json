@@ -1299,6 +1299,131 @@
           "longitude": 73.17892381524551
         }
       ]
+    },
+    {
+      "route_id": "orange_line",
+      "locations": [
+        {
+          "name": "Faiz Ahmed Faiz Interchange",
+          "latitude": 33.67597547092326,
+          "longitude": 73.05419343744485
+        },
+        {
+          "name": "National Highway Authority",
+          "latitude": 33.677293950787515,
+          "longitude": 73.0347404010865
+        },
+        {
+          "name": "G 13",
+          "latitude": 33.64962022456023,
+          "longitude": 72.98190082599774
+        },
+        {
+          "name": "N-5 (National Highway)",
+          "latitude": 33.631405458274656,
+          "longitude": 72.94504902802898
+        }
+      ]
+    },
+    {
+      "route_id": "red_line",
+      "locations": [
+        {
+          "name": "Saddar",
+          "latitude": 33.59376829488407,
+          "longitude": 73.0561767662768
+        },
+        {
+          "name": "Marir Chowk",
+          "latitude": 33.59956816170293,
+          "longitude": 73.06260333905094
+        },
+        {
+          "name": "Liaquat Bagh",
+          "latitude": 33.606127171255565,
+          "longitude": 73.06580053219396
+        },
+        {
+          "name": "Committee Chowk",
+          "latitude": 33.61374893564973,
+          "longitude": 73.06507097132922
+        },
+        {
+          "name": "Waris Khan",
+          "latitude": 33.62058382520123,
+          "longitude": 73.06610093958388
+        },
+        {
+          "name": "Chandni Chowk",
+          "latitude": 33.63037846939594,
+          "longitude": 73.07188452778101
+        },
+        {
+          "name": "Rehmanabad",
+          "latitude": 33.636074234549824,
+          "longitude": 73.07437287219966
+        },
+        {
+          "name": "6Th Road",
+          "latitude": 33.64342792428653,
+          "longitude": 73.07730268205215
+        },
+        {
+          "name": "Shamsabad",
+          "latitude": 33.650152206091484,
+          "longitude": 73.0798887863183
+        },
+        {
+          "name": "Potohar",
+          "latitude": 33.660806319056015,
+          "longitude": 73.06541558639717
+        },
+        {
+          "name": "Khayaban E Johar",
+          "latitude": 33.66881612869496,
+          "longitude": 73.05931087868181
+        },
+        {
+          "name": "Kashmir Highway",
+          "latitude": 33.68410145437295,
+          "longitude": 73.04794904131477
+        },
+        {
+          "name": "Chaman",
+          "latitude": 33.68958279583243,
+          "longitude": 73.04311033625456
+        },
+        {
+          "name": "Ibn E Sina",
+          "latitude": 33.6957957503929,
+          "longitude": 73.03848620790178
+        },
+        {
+          "name": "Stock Exchange",
+          "latitude": 33.71173131945205,
+          "longitude": 73.05938617175002
+        },
+        {
+          "name": "7Th Avenue",
+          "latitude": 33.71791590021736,
+          "longitude": 73.07131663745794
+        },
+        {
+          "name": "Shaheed E Millat",
+          "latitude": 33.72143189903388,
+          "longitude": 73.07862297479728
+        },
+        {
+          "name": "Parade Ground",
+          "latitude": 33.72481390411347,
+          "longitude": 73.08440581744021
+        },
+        {
+          "name": "Secretariat",
+          "latitude": 33.734981351421155,
+          "longitude": 73.09199091046553
+        }
+      ]
     }
   ]
 }

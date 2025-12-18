@@ -14,8 +14,8 @@
     "nust": {
       "id": "nust",
       "name": "Nust Metro Station",
-      "latitude": 33.645572,
-      "longitude": 72.990345,
+      "latitude": 33.65616235045436,
+      "longitude": 72.99354916191967,
       "routes_serving": [
         "fr_05",
         "fr_07",
@@ -35,8 +35,8 @@
     "police_foundation": {
       "id": "police_foundation",
       "name": "Police Foundation",
-      "latitude": 33.652,
-      "longitude": 72.995,
+      "latitude": 33.66401117816605,
+      "longitude": 73.00665575482641,
       "routes_serving": [
         "fr_05",
         "fr_07",
@@ -56,8 +56,8 @@
     "npa_stop": {
       "id": "npa_stop",
       "name": "NPA Stop",
-      "latitude": 33.648,
-      "longitude": 72.992,
+      "latitude": 33.65522369551933,
+      "longitude": 73.0107879951163,
       "routes_serving": [
         "fr_01"
       ],
@@ -71,8 +71,8 @@
     "islamic_university": {
       "id": "islamic_university",
       "name": "Islamic University",
-      "latitude": 33.652,
-      "longitude": 73.042,
+      "latitude": 33.65841146575012,
+      "longitude": 73.01874069819371,
       "routes_serving": [
         "fr_01"
       ],
@@ -86,8 +86,8 @@
     "fast_university": {
       "id": "fast_university",
       "name": "FAST University",
-      "latitude": 33.6453,
-      "longitude": 73.0117,
+      "latitude": 33.65715207354386,
+      "longitude": 73.01562587623567,
       "routes_serving": [
         "fr_01"
       ],
@@ -101,8 +101,8 @@
     "paec_general_hospital": {
       "id": "paec_general_hospital",
       "name": "PAEC General Hospital",
-      "latitude": 33.655,
-      "longitude": 73.018,
+      "latitude": 33.65186416615534,
+      "longitude": 73.01455034691553,
       "routes_serving": [
         "fr_01"
       ],
@@ -116,8 +116,8 @@
     "imc_hospital": {
       "id": "imc_hospital",
       "name": "IMC Hospital",
-      "latitude": 33.657,
-      "longitude": 73.021,
+      "latitude": 33.6485390851684,
+      "longitude": 73.0172052799046,
       "routes_serving": [
         "fr_01"
       ],
@@ -131,8 +131,8 @@
     "metro_cnc": {
       "id": "metro_cnc",
       "name": "Metro CNC",
-      "latitude": 33.659,
-      "longitude": 73.024,
+      "latitude": 33.64017881210836,
+      "longitude": 73.02475235499799,
       "routes_serving": [
         "fr_01"
       ],
@@ -149,8 +149,8 @@
     "sabzi_mandi": {
       "id": "sabzi_mandi",
       "name": "Sabzi Mandi",
-      "latitude": 33.661,
-      "longitude": 73.027,
+      "latitude": 33.64015443818664,
+      "longitude": 73.02470144651754,
       "routes_serving": [
         "fr_01"
       ],
@@ -164,8 +164,8 @@
     "mandi_morh": {
       "id": "mandi_morh",
       "name": "Mandi Morh",
-      "latitude": 33.663,
-      "longitude": 73.03,
+      "latitude": 33.636761081440426,
+      "longitude": 73.0340763701306,
       "routes_serving": [
         "fr_09",
         "fr_14",
@@ -184,8 +184,8 @@
     "kurang_road_stop": {
       "id": "kurang_road_stop",
       "name": "Kurang Road Stop",
-      "latitude": 33.665,
-      "longitude": 73.033,
+      "latitude": 33.6442317902593,
+      "longitude": 73.02994407977063,
       "routes_serving": [
         "fr_01"
       ],
@@ -199,8 +199,8 @@
     "iesco": {
       "id": "iesco",
       "name": "IESCO",
-      "latitude": 33.667,
-      "longitude": 73.036,
+      "latitude": 33.653177186922356,
+      "longitude": 73.04855285509447,
       "routes_serving": [
         "fr_01"
       ],
@@ -214,8 +214,8 @@
     "ptcl_i_10": {
       "id": "ptcl_i_10",
       "name": "PTCL I-10",
-      "latitude": 33.669,
-      "longitude": 73.039,
+      "latitude": 33.64915941878916,
+      "longitude": 73.04126007977088,
       "routes_serving": [
         "fr_01"
       ],
@@ -229,8 +229,8 @@
     "sui_gas_stop": {
       "id": "sui_gas_stop",
       "name": "Sui Gas Stop",
-      "latitude": 33.671,
-      "longitude": 73.042,
+      "latitude": 33.65323621167766,
+      "longitude": 73.04846239326234,
       "routes_serving": [
         "fr_01"
       ],
@@ -244,8 +244,8 @@
     "ogti_stop": {
       "id": "ogti_stop",
       "name": "OGTI Stop",
-      "latitude": 33.673,
-      "longitude": 73.045,
+      "latitude": 33.65493785374421,
+      "longitude": 73.05186740729125,
       "routes_serving": [
         "fr_01"
       ],
@@ -259,8 +259,8 @@
     "cda_complain_center": {
       "id": "cda_complain_center",
       "name": "CDA Complain Center",
-      "latitude": 33.675,
-      "longitude": 73.048,
+      "latitude": 33.65749161703867,
+      "longitude": 73.05705183675967,
       "routes_serving": [
         "fr_01"
       ],
@@ -274,8 +274,8 @@
     "mci_model_school": {
       "id": "mci_model_school",
       "name": "MCI Model School",
-      "latitude": 33.677,
-      "longitude": 73.051,
+      "latitude": 33.65936929199387,
+      "longitude": 73.06036175576642,
       "routes_serving": [
         "fr_01"
       ],
@@ -289,8 +289,8 @@
     "pims": {
       "id": "pims",
       "name": "Pims Metro Station",
-      "latitude": 33.703,
-      "longitude": 73.054,
+      "latitude": 33.705771076959586,
+      "longitude": 73.04842526628263,
       "routes_serving": [
         "fr_07",
         "fr_08a",
@@ -313,8 +313,8 @@
     "katchery": {
       "id": "katchery",
       "name": "Katchery",
-      "latitude": 33.70227371233824,
-      "longitude": 73.04127215721275,
+      "latitude": 33.71167004345022,
+      "longitude": 73.0396811906576,
       "routes_serving": [
         "fr_03a",
         "red_line"
@@ -332,8 +332,8 @@
     "f_8_markaz": {
       "id": "f_8_markaz",
       "name": "F-8 Markaz",
-      "latitude": 33.707,
-      "longitude": 73.045,
+      "latitude": 33.70897506352382,
+      "longitude": 73.0392400742605,
       "routes_serving": [
         "fr_03a"
       ],
@@ -347,8 +347,8 @@
     "f_9_park": {
       "id": "f_9_park",
       "name": "F-9 Park",
-      "latitude": 33.712,
-      "longitude": 73.053,
+      "latitude": 33.69626473744667,
+      "longitude": 73.0178166356354,
       "routes_serving": [
         "fr_03a",
         "fr_06"
@@ -366,8 +366,8 @@
     "shaheen_chowk": {
       "id": "shaheen_chowk",
       "name": "Shaheen Chowk",
-      "latitude": 33.715,
-      "longitude": 73.055,
+      "latitude": 33.71225657009168,
+      "longitude": 73.02647576865095,
       "routes_serving": [
         "fr_03a",
         "fr_06"
@@ -385,8 +385,8 @@
     "bahria_university": {
       "id": "bahria_university",
       "name": "Bahria University",
-      "latitude": 33.718,
-      "longitude": 73.057,
+      "latitude": 33.71590950412624,
+      "longitude": 73.0316821680655,
       "routes_serving": [
         "fr_03a"
       ],
@@ -400,8 +400,8 @@
     "naval_complex": {
       "id": "naval_complex",
       "name": "Naval Complex",
-      "latitude": 33.72,
-      "longitude": 73.049,
+      "latitude": 33.71911409238221,
+      "longitude": 73.037922851093,
       "routes_serving": [
         "fr_03a"
       ],
@@ -415,8 +415,8 @@
     "faisal_masjid": {
       "id": "faisal_masjid",
       "name": "Faisal Masjid",
-      "latitude": 33.729712,
-      "longitude": 73.037147,
+      "latitude": 33.72745049970733,
+      "longitude": 73.04013203590536,
       "routes_serving": [
         "fr_03a"
       ],
@@ -430,8 +430,8 @@
     "parveen_shakir_road": {
       "id": "parveen_shakir_road",
       "name": "Parveen Shakir Road",
-      "latitude": 33.725,
-      "longitude": 73.042,
+      "latitude": 33.72295906576111,
+      "longitude": 73.0450559269901,
       "routes_serving": [
         "fr_03a"
       ],
@@ -445,8 +445,8 @@
     "kohsar_road": {
       "id": "kohsar_road",
       "name": "Kohsar Road",
-      "latitude": 33.727,
-      "longitude": 73.046,
+      "latitude": 33.72676191855094,
+      "longitude": 73.05295235299494,
       "routes_serving": [
         "fr_03a"
       ],
@@ -460,8 +460,8 @@
     "f_7_markaz": {
       "id": "f_7_markaz",
       "name": "F-7 Markaz",
-      "latitude": 33.723,
-      "longitude": 73.056,
+      "latitude": 33.72238280297697,
+      "longitude": 73.05763403115739,
       "routes_serving": [
         "fr_03a"
       ],
@@ -475,8 +475,8 @@
     "flower_market": {
       "id": "flower_market",
       "name": "Flower Market",
-      "latitude": 33.721,
-      "longitude": 73.058,
+      "latitude": 33.72406619654728,
+      "longitude": 73.06107810820274,
       "routes_serving": [
         "fr_03a"
       ],
@@ -490,8 +490,8 @@
     "children_hospital": {
       "id": "children_hospital",
       "name": "Children Hospital",
-      "latitude": 33.702,
-      "longitude": 73.0545,
+      "latitude": 33.70537137129901,
+      "longitude": 73.05554950477897,
       "routes_serving": [
         "fr_07",
         "fr_04",
@@ -511,8 +511,8 @@
     "rescue_15": {
       "id": "rescue_15",
       "name": "Rescue 15",
-      "latitude": 33.7,
-      "longitude": 73.052,
+      "latitude": 33.70046153534805,
+      "longitude": 73.06198165393491,
       "routes_serving": [
         "fr_04"
       ],
@@ -526,8 +526,8 @@
     "bank_colony": {
       "id": "bank_colony",
       "name": "Bank Colony",
-      "latitude": 33.698,
-      "longitude": 73.05,
+      "latitude": 33.735948114807464,
+      "longitude": 73.20982690793362,
       "routes_serving": [
         "fr_04"
       ],
@@ -541,8 +541,8 @@
     "salai_centre": {
       "id": "salai_centre",
       "name": "Salai Centre",
-      "latitude": 33.696,
-      "longitude": 73.048,
+      "latitude": 33.643091125649825,
+      "longitude": 73.0098718110711,
       "routes_serving": [
         "fr_04"
       ],
@@ -556,8 +556,8 @@
     "sitara_market": {
       "id": "sitara_market",
       "name": "Sitara Market",
-      "latitude": 33.694,
-      "longitude": 73.046,
+      "latitude": 33.70592071993154,
+      "longitude": 73.06693220487129,
       "routes_serving": [
         "fr_04"
       ],
@@ -571,8 +571,8 @@
     "pully_stop": {
       "id": "pully_stop",
       "name": "Pully Stop",
-      "latitude": 33.692,
-      "longitude": 73.044,
+      "latitude": 33.70787069043686,
+      "longitude": 73.07015990743906,
       "routes_serving": [
         "fr_09",
         "fr_04",
@@ -591,8 +591,8 @@
     "iqbal_hall": {
       "id": "iqbal_hall",
       "name": "Iqbal Hall",
-      "latitude": 33.69,
-      "longitude": 73.042,
+      "latitude": 33.70999902341296,
+      "longitude": 73.07204809974415,
       "routes_serving": [
         "fr_04"
       ],
@@ -606,8 +606,8 @@
     "g_6_12": {
       "id": "g_6_12",
       "name": "G-6/1.2",
-      "latitude": 33.688,
-      "longitude": 73.06,
+      "latitude": 33.712788794465204,
+      "longitude": 73.08046943559292,
       "routes_serving": [
         "fr_04"
       ],
@@ -621,8 +621,8 @@
     "melody_market": {
       "id": "melody_market",
       "name": "Melody Market",
-      "latitude": 33.686,
-      "longitude": 73.062,
+      "latitude": 33.715180092014734,
+      "longitude": 73.08434247142414,
       "routes_serving": [
         "fr_04"
       ],
@@ -636,8 +636,8 @@
     "abpara_market": {
       "id": "abpara_market",
       "name": "Abpara Market",
-      "latitude": 33.717,
-      "longitude": 73.062,
+      "latitude": 33.710074373640424,
+      "longitude": 73.09163807490908,
       "routes_serving": [
         "fr_04"
       ],
@@ -666,8 +666,8 @@
     "metropolitan_corporation": {
       "id": "metropolitan_corporation",
       "name": "Metropolitan Corporation",
-      "latitude": 33.713,
-      "longitude": 73.066,
+      "latitude": 33.71556543415166,
+      "longitude": 73.08762716304525,
       "routes_serving": [
         "fr_04"
       ],
@@ -684,8 +684,8 @@
     "icb_college": {
       "id": "icb_college",
       "name": "ICB College",
-      "latitude": 33.711,
-      "longitude": 73.068,
+      "latitude": 33.71730159896494,
+      "longitude": 73.08916067184546,
       "routes_serving": [
         "fr_04"
       ],
@@ -699,8 +699,8 @@
     "nadra_chowk": {
       "id": "nadra_chowk",
       "name": "NADRA Chowk",
-      "latitude": 33.709,
-      "longitude": 73.07,
+      "latitude": 33.71984059249061,
+      "longitude": 73.09563118162852,
       "routes_serving": [
         "fr_04"
       ],
@@ -714,8 +714,8 @@
     "lodges_park": {
       "id": "lodges_park",
       "name": "Lodges Park",
-      "latitude": 33.707,
-      "longitude": 73.072,
+      "latitude": 33.71584970852236,
+      "longitude": 73.098551452535,
       "routes_serving": [
         "fr_04"
       ],
@@ -729,8 +729,8 @@
     "sukh_chayn_park": {
       "id": "sukh_chayn_park",
       "name": "Sukh Chayn Park",
-      "latitude": 33.705,
-      "longitude": 73.074,
+      "latitude": 33.7134400732209,
+      "longitude": 73.09994620092624,
       "routes_serving": [
         "fr_04"
       ],
@@ -744,8 +744,8 @@
     "ministry_of_foreign_affairs": {
       "id": "ministry_of_foreign_affairs",
       "name": "Ministry of Foreign Affairs",
-      "latitude": 33.703,
-      "longitude": 73.076,
+      "latitude": 33.71891611494204,
+      "longitude": 73.1037976477992,
       "routes_serving": [
         "fr_04"
       ],
@@ -759,8 +759,8 @@
     "radio_pakistan": {
       "id": "radio_pakistan",
       "name": "Radio Pakistan",
-      "latitude": 33.701,
-      "longitude": 73.078,
+      "latitude": 33.72276283585213,
+      "longitude": 73.10087335960137,
       "routes_serving": [
         "fr_04"
       ],
@@ -774,8 +774,8 @@
     "national_library": {
       "id": "national_library",
       "name": "National Library",
-      "latitude": 33.699,
-      "longitude": 73.08,
+      "latitude": 33.724648528214054,
+      "longitude": 73.10273174843998,
       "routes_serving": [
         "fr_04"
       ],
@@ -789,8 +789,8 @@
     "secretariate_police_station": {
       "id": "secretariate_police_station",
       "name": "Secretariate Police Station",
-      "latitude": 33.697,
-      "longitude": 73.082,
+      "latitude": 33.72699328083057,
+      "longitude": 73.10741081999159,
       "routes_serving": [
         "fr_04"
       ],
@@ -804,8 +804,8 @@
     "diplomatic_enclave_gate_4": {
       "id": "diplomatic_enclave_gate_4",
       "name": "Diplomatic Enclave Gate 4",
-      "latitude": 33.695,
-      "longitude": 73.084,
+      "latitude": 33.7320741385373,
+      "longitude": 73.11036091874325,
       "routes_serving": [
         "fr_04"
       ],
@@ -819,8 +819,8 @@
     "aiwan_e_sadar_colony": {
       "id": "aiwan_e_sadar_colony",
       "name": "Aiwan e Sadar Colony",
-      "latitude": 33.693,
-      "longitude": 73.086,
+      "latitude": 33.733911705279155,
+      "longitude": 73.10842840119612,
       "routes_serving": [
         "fr_04"
       ],
@@ -834,8 +834,8 @@
     "muslim_colony": {
       "id": "muslim_colony",
       "name": "Muslim Colony",
-      "latitude": 33.691,
-      "longitude": 73.088,
+      "latitude": 33.7376341761268,
+      "longitude": 73.10810204829741,
       "routes_serving": [
         "fr_04"
       ],
@@ -849,8 +849,8 @@
     "bari_imam": {
       "id": "bari_imam",
       "name": "Bari Imam",
-      "latitude": 33.689,
-      "longitude": 73.09,
+      "latitude": 33.74361259060048,
+      "longitude": 73.1094763783134,
       "routes_serving": [
         "fr_04a",
         "fr_04"
@@ -868,8 +868,8 @@
     "muhallah_noori_bagh": {
       "id": "muhallah_noori_bagh",
       "name": "Muhallah Noori Bagh",
-      "latitude": 33.687,
-      "longitude": 73.092,
+      "latitude": 33.744526135013956,
+      "longitude": 73.11301072395725,
       "routes_serving": [
         "fr_04a"
       ],
@@ -883,8 +883,8 @@
     "community_health_center": {
       "id": "community_health_center",
       "name": "Community Health Center",
-      "latitude": 33.685,
-      "longitude": 73.094,
+      "latitude": 33.744672004954126,
+      "longitude": 73.11764764402467,
       "routes_serving": [
         "fr_04a"
       ],
@@ -898,8 +898,8 @@
     "d_type_quaid_e_azam_colony": {
       "id": "d_type_quaid_e_azam_colony",
       "name": "D-Type Quaid e Azam Colony",
-      "latitude": 33.683,
-      "longitude": 73.096,
+      "latitude": 33.74477842201472,
+      "longitude": 73.1200990877055,
       "routes_serving": [
         "fr_04a"
       ],
@@ -913,8 +913,8 @@
     "c_type_quaid_e_azam_colony": {
       "id": "c_type_quaid_e_azam_colony",
       "name": "C-Type Quaid e Azam Colony",
-      "latitude": 33.681,
-      "longitude": 73.098,
+      "latitude": 33.744751658278815,
+      "longitude": 73.12486269091103,
       "routes_serving": [
         "fr_04a"
       ],
@@ -928,8 +928,8 @@
     "babul_quaid": {
       "id": "babul_quaid",
       "name": "Babul Quaid",
-      "latitude": 33.679,
-      "longitude": 73.1,
+      "latitude": 33.74495684671334,
+      "longitude": 73.12947609046074,
       "routes_serving": [
         "fr_04a"
       ],
@@ -943,8 +943,8 @@
     "quaid_azam_university": {
       "id": "quaid_azam_university",
       "name": "Quaid Azam University",
-      "latitude": 33.652,
-      "longitude": 73.167,
+      "latitude": 33.74493900426212,
+      "longitude": 73.13964702705954,
       "routes_serving": [
         "fr_04a"
       ],
@@ -958,8 +958,8 @@
     "g_10": {
       "id": "g_10",
       "name": "G-10 Metro Station",
-      "latitude": 33.66717786963273,
-      "longitude": 73.01532232010295,
+      "latitude": 33.66812149156935,
+      "longitude": 73.01199876656565,
       "routes_serving": [
         "fr_05",
         "orange_line"
@@ -977,8 +977,8 @@
     "sunday_bazar": {
       "id": "sunday_bazar",
       "name": "Sunday Bazar",
-      "latitude": 33.686,
-      "longitude": 73.034,
+      "latitude": 33.6704710026737,
+      "longitude": 73.01037636005229,
       "routes_serving": [
         "fr_05"
       ],
@@ -992,8 +992,8 @@
     "g10_g11": {
       "id": "g10_g11",
       "name": "G10/G11",
-      "latitude": 33.684,
-      "longitude": 73.036,
+      "latitude": 33.67300425910158,
+      "longitude": 73.00725014484864,
       "routes_serving": [
         "fr_05"
       ],
@@ -1007,8 +1007,8 @@
     "sumbal_road": {
       "id": "sumbal_road",
       "name": "Sumbal Road",
-      "latitude": 33.682,
-      "longitude": 73.038,
+      "latitude": 33.690848001420804,
+      "longitude": 73.00599400538732,
       "routes_serving": [
         "fr_05"
       ],
@@ -1022,8 +1022,8 @@
     "khayaban_e_iqbal": {
       "id": "khayaban_e_iqbal",
       "name": "Khayaban e Iqbal",
-      "latitude": 33.68,
-      "longitude": 73.04,
+      "latitude": 33.71785084228562,
+      "longitude": 73.03562589644407,
       "routes_serving": [
         "fr_05"
       ],
@@ -1037,8 +1037,8 @@
     "npf_housing_society": {
       "id": "npf_housing_society",
       "name": "NPF Housing Society",
-      "latitude": 33.678,
-      "longitude": 73.042,
+      "latitude": 33.70139092157227,
+      "longitude": 72.98530191014846,
       "routes_serving": [
         "fr_05"
       ],
@@ -1052,8 +1052,8 @@
     "multy_stop___islamabad_gardens": {
       "id": "multy_stop___islamabad_gardens",
       "name": "Multy Stop / Islamabad Gardens",
-      "latitude": 33.676,
-      "longitude": 73.044,
+      "latitude": 33.70517043778595,
+      "longitude": 72.98238300850728,
       "routes_serving": [
         "fr_05"
       ],
@@ -1067,8 +1067,8 @@
     "e_11_2___fechs___islamabad_international_hospital": {
       "id": "e_11_2___fechs___islamabad_international_hospital",
       "name": "E-11/2 / FECHS / Islamabad International Hospital",
-      "latitude": 33.674,
-      "longitude": 73.046,
+      "latitude": 33.702804330380225,
+      "longitude": 72.96823623693213,
       "routes_serving": [
         "fr_05"
       ],
@@ -1082,8 +1082,8 @@
     "d_12_service_road": {
       "id": "d_12_service_road",
       "name": "D-12 Service Road",
-      "latitude": 33.672,
-      "longitude": 73.048,
+      "latitude": 33.70024371460742,
+      "longitude": 72.9605014871891,
       "routes_serving": [
         "fr_05"
       ],
@@ -1097,8 +1097,8 @@
     "iesco_d_12": {
       "id": "iesco_d_12",
       "name": "IESCO D-12",
-      "latitude": 33.67,
-      "longitude": 73.05,
+      "latitude": 33.69716012091452,
+      "longitude": 72.95348103744601,
       "routes_serving": [
         "fr_05"
       ],
@@ -1112,8 +1112,8 @@
     "d_12_markaz": {
       "id": "d_12_markaz",
       "name": "D-12 Markaz",
-      "latitude": 33.668,
-      "longitude": 73.052,
+      "latitude": 33.70058031989568,
+      "longitude": 72.95126514412566,
       "routes_serving": [
         "fr_05"
       ],
@@ -1127,8 +1127,8 @@
     "d_12": {
       "id": "d_12",
       "name": "D-12",
-      "latitude": 33.666,
-      "longitude": 73.054,
+      "latitude": 33.702651972144444,
+      "longitude": 72.94973004425427,
       "routes_serving": [
         "fr_05"
       ],
@@ -1142,8 +1142,8 @@
     "tipu_market_g_8": {
       "id": "tipu_market_g_8",
       "name": "Tipu Market G-8",
-      "latitude": 33.697,
-      "longitude": 73.048,
+      "latitude": 33.7007123212486,
+      "longitude": 73.04232873603668,
       "routes_serving": [
         "fr_06"
       ],
@@ -1157,8 +1157,8 @@
     "ibn_e_sina_metro_station": {
       "id": "ibn_e_sina_metro_station",
       "name": "Ibn-e-Sina Metro Station",
-      "latitude": 33.695,
-      "longitude": 73.05,
+      "latitude": 33.69583366301052,
+      "longitude": 73.03858458162729,
       "routes_serving": [
         "fr_06"
       ],
@@ -1175,8 +1175,8 @@
     "chaman_metro_station": {
       "id": "chaman_metro_station",
       "name": "Chaman Metro Station",
-      "latitude": 33.693,
-      "longitude": 73.052,
+      "latitude": 33.6917436315037,
+      "longitude": 73.0426001379597,
       "routes_serving": [
         "fr_07",
         "fr_06"
@@ -1194,8 +1194,8 @@
     "taqwa_market": {
       "id": "taqwa_market",
       "name": "Taqwa Market",
-      "latitude": 33.691,
-      "longitude": 73.054,
+      "latitude": 33.690401390940806,
+      "longitude": 73.0396584699581,
       "routes_serving": [
         "fr_06"
       ],
@@ -1209,8 +1209,8 @@
     "g_9_4_park": {
       "id": "g_9_4_park",
       "name": "G-9/4 Park",
-      "latitude": 33.689,
-      "longitude": 73.056,
+      "latitude": 33.68926021306159,
+      "longitude": 73.03707597009735,
       "routes_serving": [
         "fr_06"
       ],
@@ -1224,8 +1224,8 @@
     "karachi_company": {
       "id": "karachi_company",
       "name": "Karachi Company",
-      "latitude": 33.687,
-      "longitude": 73.058,
+      "latitude": 33.68655826790666,
+      "longitude": 73.03235930280375,
       "routes_serving": [
         "fr_07",
         "fr_06"
@@ -1243,8 +1243,8 @@
     "g_9_1_and_g_9_4": {
       "id": "g_9_1_and_g_9_4",
       "name": "G-9/1 and G-9/4",
-      "latitude": 33.685,
-      "longitude": 73.06,
+      "latitude": 33.685223869252575,
+      "longitude": 73.03347546749892,
       "routes_serving": [
         "fr_06"
       ],
@@ -1258,8 +1258,8 @@
     "g_9_markaz": {
       "id": "g_9_markaz",
       "name": "G-9 Markaz",
-      "latitude": 33.683,
-      "longitude": 73.062,
+      "latitude": 33.689904955947306,
+      "longitude": 73.03033111082424,
       "routes_serving": [
         "fr_07",
         "fr_06"
@@ -1277,8 +1277,8 @@
     "g_9_3": {
       "id": "g_9_3",
       "name": "G-9/3",
-      "latitude": 33.681,
-      "longitude": 73.064,
+      "latitude": 33.68923994732535,
+      "longitude": 73.03698939735551,
       "routes_serving": [
         "fr_06"
       ],
@@ -1292,8 +1292,8 @@
     "fazaia_housing_scheme": {
       "id": "fazaia_housing_scheme",
       "name": "Fazaia Housing Scheme",
-      "latitude": 33.679,
-      "longitude": 73.066,
+      "latitude": 33.71000020631117,
+      "longitude": 73.02092766969206,
       "routes_serving": [
         "fr_06"
       ],
@@ -1307,8 +1307,8 @@
     "paf_hospital": {
       "id": "paf_hospital",
       "name": "PAF Hospital",
-      "latitude": 33.677,
-      "longitude": 73.068,
+      "latitude": 33.70755267741876,
+      "longitude": 73.01561043283475,
       "routes_serving": [
         "fr_06"
       ],
@@ -1322,8 +1322,8 @@
     "pakistan_gate": {
       "id": "pakistan_gate",
       "name": "Pakistan Gate",
-      "latitude": 33.675,
-      "longitude": 73.07,
+      "latitude": 33.70253375310019,
+      "longitude": 73.00883904780024,
       "routes_serving": [
         "fr_06"
       ],
@@ -1337,8 +1337,8 @@
     "maroof_international_hospital": {
       "id": "maroof_international_hospital",
       "name": "Maroof International Hospital",
-      "latitude": 33.673,
-      "longitude": 73.072,
+      "latitude": 33.69714725702341,
+      "longitude": 73.01273480758155,
       "routes_serving": [
         "fr_06"
       ],
@@ -1352,8 +1352,8 @@
     "f_10_markaz": {
       "id": "f_10_markaz",
       "name": "F-10 Markaz",
-      "latitude": 33.696,
-      "longitude": 73.025,
+      "latitude": 33.69455644959399,
+      "longitude": 73.01251602172444,
       "routes_serving": [
         "fr_06"
       ],
@@ -1367,8 +1367,8 @@
     "imcb_f10_4": {
       "id": "imcb_f10_4",
       "name": "IMCB F10/4",
-      "latitude": 33.694,
-      "longitude": 73.027,
+      "latitude": 33.6908547246512,
+      "longitude": 73.00600824451489,
       "routes_serving": [
         "fr_06"
       ],
@@ -1382,8 +1382,8 @@
     "imcg_f_10_2": {
       "id": "imcg_f_10_2",
       "name": "IMCG F-10/2",
-      "latitude": 33.692,
-      "longitude": 73.029,
+      "latitude": 33.689450763125755,
+      "longitude": 73.00306083483818,
       "routes_serving": [
         "fr_06"
       ],
@@ -1397,8 +1397,8 @@
     "f_10_f_11_chowk": {
       "id": "f_10_f_11_chowk",
       "name": "F-10/F-11 Chowk",
-      "latitude": 33.69,
-      "longitude": 73.031,
+      "latitude": 33.686806044482154,
+      "longitude": 72.99687850784939,
       "routes_serving": [
         "fr_06"
       ],
@@ -1412,8 +1412,8 @@
     "major_road": {
       "id": "major_road",
       "name": "Major Road",
-      "latitude": 33.688,
-      "longitude": 73.033,
+      "latitude": 33.68594605429847,
+      "longitude": 72.99410110355345,
       "routes_serving": [
         "fr_06"
       ],
@@ -1427,8 +1427,8 @@
     "ptcl_f_11": {
       "id": "ptcl_f_11",
       "name": "PTCL F-11",
-      "latitude": 33.686,
-      "longitude": 73.035,
+      "latitude": 33.68429111900835,
+      "longitude": 72.99154822303227,
       "routes_serving": [
         "fr_06"
       ],
@@ -1442,8 +1442,8 @@
     "f_11_markaz": {
       "id": "f_11_markaz",
       "name": "F-11 Markaz",
-      "latitude": 33.684,
-      "longitude": 73.037,
+      "latitude": 33.68285846364324,
+      "longitude": 72.98881723877136,
       "routes_serving": [
         "fr_06"
       ],
@@ -1457,8 +1457,8 @@
     "opf_girls_college": {
       "id": "opf_girls_college",
       "name": "OPF Girls College",
-      "latitude": 33.682,
-      "longitude": 73.039,
+      "latitude": 33.68560024870533,
+      "longitude": 72.98495823937701,
       "routes_serving": [
         "fr_06"
       ],
@@ -1472,8 +1472,8 @@
     "golra_sharif_f_11_3": {
       "id": "golra_sharif_f_11_3",
       "name": "Golra Sharif F-11/3",
-      "latitude": 33.68,
-      "longitude": 73.041,
+      "latitude": 33.68937965949906,
+      "longitude": 72.9822889951181,
       "routes_serving": [
         "fr_06"
       ],
@@ -1487,8 +1487,8 @@
     "golra_sharif": {
       "id": "golra_sharif",
       "name": "Golra Sharif",
-      "latitude": 33.644,
-      "longitude": 72.988,
+      "latitude": 33.68932992407956,
+      "longitude": 72.98237567821926,
       "routes_serving": [
         "fr_06"
       ],
@@ -1502,8 +1502,8 @@
     "nori_hospital": {
       "id": "nori_hospital",
       "name": "NORI Hospital",
-      "latitude": 33.701,
-      "longitude": 73.055,
+      "latitude": 33.69872355284949,
+      "longitude": 73.05390933322424,
       "routes_serving": [
         "fr_07"
       ],
@@ -1517,8 +1517,8 @@
     "dental_hospital": {
       "id": "dental_hospital",
       "name": "Dental Hospital",
-      "latitude": 33.7,
-      "longitude": 73.056,
+      "latitude": 33.69974111444802,
+      "longitude": 73.04896333974719,
       "routes_serving": [
         "fr_07"
       ],
@@ -1532,8 +1532,8 @@
     "g_8_markaz": {
       "id": "g_8_markaz",
       "name": "G-8 Markaz",
-      "latitude": 33.698,
-      "longitude": 73.05,
+      "latitude": 33.699027037385164,
+      "longitude": 73.04749348921057,
       "routes_serving": [
         "fr_07"
       ],
@@ -1547,8 +1547,8 @@
     "development_park": {
       "id": "development_park",
       "name": "Development Park",
-      "latitude": 33.696,
-      "longitude": 73.052,
+      "latitude": 33.69557260579922,
+      "longitude": 73.04804065987764,
       "routes_serving": [
         "fr_07"
       ],
@@ -1562,8 +1562,8 @@
     "g_9_4": {
       "id": "g_9_4",
       "name": "G-9/4",
-      "latitude": 33.689,
-      "longitude": 73.056,
+      "latitude": 33.68926021306159,
+      "longitude": 73.03707597009735,
       "routes_serving": [
         "fr_07"
       ],
@@ -1577,8 +1577,8 @@
     "police_flats": {
       "id": "police_flats",
       "name": "Police Flats",
-      "latitude": 33.687,
-      "longitude": 73.058,
+      "latitude": 33.684880600359925,
+      "longitude": 73.02472775132632,
       "routes_serving": [
         "fr_07"
       ],
@@ -1592,8 +1592,8 @@
     "college_morh": {
       "id": "college_morh",
       "name": "College Morh",
-      "latitude": 33.685,
-      "longitude": 73.06,
+      "latitude": 33.68105540612217,
+      "longitude": 73.01837571468454,
       "routes_serving": [
         "fr_07"
       ],
@@ -1607,8 +1607,8 @@
     "g_10_markaz": {
       "id": "g_10_markaz",
       "name": "G-10 Markaz",
-      "latitude": 33.688,
-      "longitude": 73.032,
+      "latitude": 33.67650917901414,
+      "longitude": 73.01458852478868,
       "routes_serving": [
         "fr_07"
       ],
@@ -1622,8 +1622,8 @@
     "pha_flats": {
       "id": "pha_flats",
       "name": "PHA Flats",
-      "latitude": 33.686,
-      "longitude": 73.034,
+      "latitude": 33.67574296788226,
+      "longitude": 73.01182475666249,
       "routes_serving": [
         "fr_07"
       ],
@@ -1637,8 +1637,8 @@
     "tanki_stop": {
       "id": "tanki_stop",
       "name": "Tanki Stop",
-      "latitude": 33.684,
-      "longitude": 73.036,
+      "latitude": 33.6741222166913,
+      "longitude": 73.00985989044702,
       "routes_serving": [
         "fr_07"
       ],
@@ -1667,8 +1667,8 @@
     "institute_of_modern_studies": {
       "id": "institute_of_modern_studies",
       "name": "Institute of Modern Studies",
-      "latitude": 33.68,
-      "longitude": 73.04,
+      "latitude": 33.67225142887911,
+      "longitude": 73.00283562653611,
       "routes_serving": [
         "fr_07"
       ],
@@ -1682,8 +1682,8 @@
     "g_11_markaz": {
       "id": "g_11_markaz",
       "name": "G-11 Markaz",
-      "latitude": 33.678,
-      "longitude": 73.042,
+      "latitude": 33.67000714306969,
+      "longitude": 72.99869564926453,
       "routes_serving": [
         "fr_07"
       ],
@@ -1697,8 +1697,8 @@
     "mehrabad": {
       "id": "mehrabad",
       "name": "Mehrabad",
-      "latitude": 33.676,
-      "longitude": 73.044,
+      "latitude": 33.66647019084591,
+      "longitude": 72.98976782580704,
       "routes_serving": [
         "fr_07"
       ],
@@ -1712,8 +1712,8 @@
     "bar_council": {
       "id": "bar_council",
       "name": "Bar Council",
-      "latitude": 33.654,
-      "longitude": 72.997,
+      "latitude": 33.65950949850007,
+      "longitude": 72.99708985839457,
       "routes_serving": [
         "fr_07"
       ],
@@ -1727,8 +1727,8 @@
     "ak_bari_road": {
       "id": "ak_bari_road",
       "name": "A.K Bari Road",
-      "latitude": 33.656,
-      "longitude": 72.999,
+      "latitude": 33.661795574704115,
+      "longitude": 73.00230407282065,
       "routes_serving": [
         "fr_07"
       ],
@@ -1742,8 +1742,8 @@
     "tnt": {
       "id": "tnt",
       "name": "TNT",
-      "latitude": 33.704,
-      "longitude": 73.058,
+      "latitude": 33.69766367958974,
+      "longitude": 73.06191122632266,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1761,8 +1761,8 @@
     "zero_point": {
       "id": "zero_point",
       "name": "Zero Point",
-      "latitude": 33.697,
-      "longitude": 73.065,
+      "latitude": 33.69661193644461,
+      "longitude": 73.07012632570736,
       "routes_serving": [
         "fr_08a"
       ],
@@ -1776,8 +1776,8 @@
     "cda": {
       "id": "cda",
       "name": "CDA",
-      "latitude": 33.695,
-      "longitude": 73.067,
+      "latitude": 33.6413010371886,
+      "longitude": 73.04411054651209,
       "routes_serving": [
         "fr_08a"
       ],
@@ -1791,8 +1791,8 @@
     "abpara": {
       "id": "abpara",
       "name": "Abpara",
-      "latitude": 33.717,
-      "longitude": 73.062,
+      "latitude": 33.70587953244183,
+      "longitude": 73.08876630811679,
       "routes_serving": [
         "fr_08a"
       ],
@@ -1806,8 +1806,8 @@
     "foreign_affairs_office": {
       "id": "foreign_affairs_office",
       "name": "Foreign Affairs Office",
-      "latitude": 33.703,
-      "longitude": 73.076,
+      "latitude": 33.710955767476264,
+      "longitude": 73.10564090623255,
       "routes_serving": [
         "fr_08a"
       ],
@@ -1821,8 +1821,8 @@
     "kashmir_chowk": {
       "id": "kashmir_chowk",
       "name": "Kashmir Chowk",
-      "latitude": 33.70673727456122,
-      "longitude": 73.10605836635888,
+      "latitude": 33.70737686380931,
+      "longitude": 73.1063704670969,
       "routes_serving": [
         "fr_14",
         "fr_08a"
@@ -1840,8 +1840,8 @@
     "rawal_dam_chowk": {
       "id": "rawal_dam_chowk",
       "name": "Rawal Dam Chowk",
-      "latitude": 33.691595113300785,
-      "longitude": 73.10994799792725,
+      "latitude": 33.691837664272,
+      "longitude": 73.11058213416324,
       "routes_serving": [
         "fr_14",
         "fr_08a"
@@ -1859,8 +1859,8 @@
     "rawal_town": {
       "id": "rawal_town",
       "name": "Rawal Town",
-      "latitude": 33.68942112110317,
-      "longitude": 73.11168589183715,
+      "latitude": 33.689370419069675,
+      "longitude": 73.11173039079104,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1878,8 +1878,8 @@
     "school_board_stop": {
       "id": "school_board_stop",
       "name": "School Board Stop",
-      "latitude": 33.688986917898696,
-      "longitude": 73.11644770084543,
+      "latitude": 33.68899245184988,
+      "longitude": 73.11641174492661,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1897,8 +1897,8 @@
     "rawal_dam_colony": {
       "id": "rawal_dam_colony",
       "name": "Rawal Dam Colony",
-      "latitude": 33.688471437622624,
-      "longitude": 73.12037518258546,
+      "latitude": 33.68840449953099,
+      "longitude": 73.12036124315094,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1916,8 +1916,8 @@
     "narc_colony": {
       "id": "narc_colony",
       "name": "N.A.R.C Colony",
-      "latitude": 33.68731332969714,
-      "longitude": 73.13073663802963,
+      "latitude": 33.687407071224186,
+      "longitude": 73.13180595527018,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1935,8 +1935,8 @@
     "nih_allergy_center": {
       "id": "nih_allergy_center",
       "name": "N.I.H Allergy Center",
-      "latitude": 33.68497133035878,
-      "longitude": 73.13531423616536,
+      "latitude": 33.6848662015435,
+      "longitude": 73.13538952548298,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1954,8 +1954,8 @@
     "shahzad_town": {
       "id": "shahzad_town",
       "name": "Shahzad Town",
-      "latitude": 33.677481651644925,
-      "longitude": 73.14159296884174,
+      "latitude": 33.67736914836529,
+      "longitude": 73.14168600981654,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1973,8 +1973,8 @@
     "park_view_city": {
       "id": "park_view_city",
       "name": "Park View City",
-      "latitude": 33.674142627253914,
-      "longitude": 73.1444300109076,
+      "latitude": 33.67418733049198,
+      "longitude": 73.14437213534026,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -1992,8 +1992,8 @@
     "green_avenue": {
       "id": "green_avenue",
       "name": "Green Avenue",
-      "latitude": 33.667682555974785,
-      "longitude": 73.1498573436445,
+      "latitude": 33.667634529881504,
+      "longitude": 73.14987079253174,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2011,8 +2011,8 @@
     "chatta_bakhtawar": {
       "id": "chatta_bakhtawar",
       "name": "Chatta Bakhtawar",
-      "latitude": 33.66458028216699,
-      "longitude": 73.15251709992815,
+      "latitude": 33.664579580165444,
+      "longitude": 73.1525913323509,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2030,8 +2030,8 @@
     "gulshan_al_huda_community": {
       "id": "gulshan_al_huda_community",
       "name": "Gulshan Al Huda Community",
-      "latitude": 33.65895964972203,
-      "longitude": 73.15337067235593,
+      "latitude": 33.65922417128849,
+      "longitude": 73.15375727797695,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2049,8 +2049,8 @@
     "hostel_city": {
       "id": "hostel_city",
       "name": "Hostel City",
-      "latitude": 33.65618491378829,
-      "longitude": 73.15411004001434,
+      "latitude": 33.65608505185562,
+      "longitude": 73.15413153213662,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2068,8 +2068,8 @@
     "comsats_university": {
       "id": "comsats_university",
       "name": "COMSATS University",
-      "latitude": 33.65187212121121,
-      "longitude": 73.1597557348578,
+      "latitude": 33.65184346427155,
+      "longitude": 73.15980292203837,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2087,8 +2087,8 @@
     "tamma_stop": {
       "id": "tamma_stop",
       "name": "Tamma Stop",
-      "latitude": 33.784,
-      "longitude": 73.149,
+      "latitude": 33.64812890801019,
+      "longitude": 73.16224996841554,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2106,8 +2106,8 @@
     "capt_naeem_tufail_shaheed_chowk": {
       "id": "capt_naeem_tufail_shaheed_chowk",
       "name": "Capt. Naeem Tufail Shaheed Chowk",
-      "latitude": 33.786,
-      "longitude": 73.151,
+      "latitude": 33.644823335305404,
+      "longitude": 73.16359373542986,
       "routes_serving": [
         "fr_08c",
         "fr_08a"
@@ -2125,8 +2125,8 @@
     "h_8": {
       "id": "h_8",
       "name": "H-8",
-      "latitude": 33.685,
-      "longitude": 73.074,
+      "latitude": 33.68411295908987,
+      "longitude": 73.07210484166711,
       "routes_serving": [
         "fr_08c"
       ],
@@ -2140,8 +2140,8 @@
     "kach_naar_park_i_8": {
       "id": "kach_naar_park_i_8",
       "name": "Kach Naar Park I-8",
-      "latitude": 33.668,
-      "longitude": 73.089,
+      "latitude": 33.673201261143895,
+      "longitude": 73.08022224442259,
       "routes_serving": [
         "fr_08c"
       ],
@@ -2155,8 +2155,8 @@
     "faizabad": {
       "id": "faizabad",
       "name": "Faizabad Interchange",
-      "latitude": 33.66452207664708,
-      "longitude": 73.08676257604763,
+      "latitude": 33.66682997443567,
+      "longitude": 73.08816133297216,
       "routes_serving": [
         "fr_09",
         "red_line",
@@ -2176,8 +2176,8 @@
     "itp_driving_license_centre": {
       "id": "itp_driving_license_centre",
       "name": "ITP Driving License Centre",
-      "latitude": 33.67238160786951,
-      "longitude": 73.09322566249271,
+      "latitude": 33.67249336537841,
+      "longitude": 73.09322959081629,
       "routes_serving": [
         "fr_14",
         "fr_08c"
@@ -2195,8 +2195,8 @@
     "margalla_town": {
       "id": "margalla_town",
       "name": "Margalla Town",
-      "latitude": 33.681657391653076,
-      "longitude": 73.10189707336185,
+      "latitude": 33.68165134127899,
+      "longitude": 73.10182436371905,
       "routes_serving": [
         "fr_14",
         "fr_08c"
@@ -2214,8 +2214,8 @@
     "garden_avenue": {
       "id": "garden_avenue",
       "name": "Garden Avenue",
-      "latitude": 33.68596895701395,
-      "longitude": 73.10709635876363,
+      "latitude": 33.685986661172585,
+      "longitude": 73.10703439098384,
       "routes_serving": [
         "fr_14",
         "fr_08c"
@@ -2233,8 +2233,8 @@
     "khanna_pul": {
       "id": "khanna_pul",
       "name": "Khanna Pul",
-      "latitude": 33.632,
-      "longitude": 73.044,
+      "latitude": 33.62729234971165,
+      "longitude": 73.11615187311992,
       "routes_serving": [
         "fr_09",
         "fr_15"
@@ -2252,8 +2252,8 @@
     "zia_masjid": {
       "id": "zia_masjid",
       "name": "Zia Masjid",
-      "latitude": 33.634,
-      "longitude": 73.046,
+      "latitude": 33.63668261039801,
+      "longitude": 73.1076208316939,
       "routes_serving": [
         "fr_09"
       ],
@@ -2267,8 +2267,8 @@
     "kuri_road": {
       "id": "kuri_road",
       "name": "Kuri Road",
-      "latitude": 33.636,
-      "longitude": 73.048,
+      "latitude": 33.64278168133575,
+      "longitude": 73.10400334725043,
       "routes_serving": [
         "fr_09"
       ],
@@ -2282,8 +2282,8 @@
     "iqbal_town": {
       "id": "iqbal_town",
       "name": "Iqbal Town",
-      "latitude": 33.638,
-      "longitude": 73.05,
+      "latitude": 33.645759696879345,
+      "longitude": 73.10077842531066,
       "routes_serving": [
         "fr_09"
       ],
@@ -2297,8 +2297,8 @@
     "dhok_kala_khan": {
       "id": "dhok_kala_khan",
       "name": "Dhok Kala Khan",
-      "latitude": 33.64,
-      "longitude": 73.052,
+      "latitude": 33.64970088746827,
+      "longitude": 73.09779915626328,
       "routes_serving": [
         "fr_09"
       ],
@@ -2312,8 +2312,8 @@
     "sohan": {
       "id": "sohan",
       "name": "Sohan",
-      "latitude": 33.648,
-      "longitude": 73.057,
+      "latitude": 33.65947377424344,
+      "longitude": 73.09047317351903,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2331,8 +2331,8 @@
     "ijp": {
       "id": "ijp",
       "name": "IJP Metro Station",
-      "latitude": 33.655,
-      "longitude": 73.053,
+      "latitude": 33.65608729476395,
+      "longitude": 73.0720416988241,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2350,8 +2350,8 @@
     "pindora_chungi": {
       "id": "pindora_chungi",
       "name": "Pindora Chungi",
-      "latitude": 33.657,
-      "longitude": 73.055,
+      "latitude": 33.65221524115215,
+      "longitude": 73.06400180860736,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2369,8 +2369,8 @@
     "katarian_chungi": {
       "id": "katarian_chungi",
       "name": "Katarian Chungi",
-      "latitude": 33.659,
-      "longitude": 73.057,
+      "latitude": 33.64875892858748,
+      "longitude": 73.05840135614791,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2388,8 +2388,8 @@
     "katarian_pull": {
       "id": "katarian_pull",
       "name": "Katarian Pull",
-      "latitude": 33.661,
-      "longitude": 73.059,
+      "latitude": 33.64585623326584,
+      "longitude": 73.05246830981389,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2407,8 +2407,8 @@
     "cda_stop": {
       "id": "cda_stop",
       "name": "CDA Stop",
-      "latitude": 33.663,
-      "longitude": 73.061,
+      "latitude": 33.6413010371886,
+      "longitude": 73.04411054651209,
       "routes_serving": [
         "fr_09",
         "fr_14"
@@ -2426,8 +2426,8 @@
     "fauji_colony": {
       "id": "fauji_colony",
       "name": "Fauji Colony",
-      "latitude": 33.667,
-      "longitude": 73.065,
+      "latitude": 33.632654433545156,
+      "longitude": 73.02755595249089,
       "routes_serving": [
         "fr_09"
       ],
@@ -2441,8 +2441,8 @@
     "carriage_factory": {
       "id": "carriage_factory",
       "name": "Carriage Factory",
-      "latitude": 33.669,
-      "longitude": 73.067,
+      "latitude": 33.63044752798577,
+      "longitude": 73.02264207135525,
       "routes_serving": [
         "fr_09"
       ],
@@ -2456,8 +2456,8 @@
     "westridge": {
       "id": "westridge",
       "name": "Westridge",
-      "latitude": 33.671,
-      "longitude": 73.069,
+      "latitude": 33.62726656249293,
+      "longitude": 73.01666847329481,
       "routes_serving": [
         "fr_09"
       ],
@@ -2471,8 +2471,8 @@
     "ctti": {
       "id": "ctti",
       "name": "CTTI",
-      "latitude": 33.673,
-      "longitude": 73.071,
+      "latitude": 33.62426215737786,
+      "longitude": 73.01060728212643,
       "routes_serving": [
         "fr_09"
       ],
@@ -2486,8 +2486,8 @@
     "social_security_hospital": {
       "id": "social_security_hospital",
       "name": "Social Security Hospital",
-      "latitude": 33.675,
-      "longitude": 73.073,
+      "latitude": 33.62038657630803,
+      "longitude": 73.0033251194973,
       "routes_serving": [
         "fr_09"
       ],
@@ -2501,8 +2501,8 @@
     "british_homes": {
       "id": "british_homes",
       "name": "British Homes",
-      "latitude": 33.677,
-      "longitude": 73.075,
+      "latitude": 33.61706073534783,
+      "longitude": 72.9979236934649,
       "routes_serving": [
         "fr_09"
       ],
@@ -2516,8 +2516,8 @@
     "pir_wadhai_morh": {
       "id": "pir_wadhai_morh",
       "name": "Pir Wadhai Morh",
-      "latitude": 33.679,
-      "longitude": 73.077,
+      "latitude": 33.61575514091682,
+      "longitude": 72.99445625256871,
       "routes_serving": [
         "fr_09"
       ],
@@ -2531,8 +2531,8 @@
     "kohinoor_mill_colony": {
       "id": "kohinoor_mill_colony",
       "name": "Kohinoor Mill Colony",
-      "latitude": 33.681,
-      "longitude": 73.079,
+      "latitude": 33.61640317566239,
+      "longitude": 72.98716661606083,
       "routes_serving": [
         "fr_09"
       ],
@@ -2546,8 +2546,8 @@
     "kohinoor_mill": {
       "id": "kohinoor_mill",
       "name": "Kohinoor Mill",
-      "latitude": 33.683,
-      "longitude": 73.081,
+      "latitude": 33.61897620669635,
+      "longitude": 72.98080391924425,
       "routes_serving": [
         "fr_09"
       ],
@@ -2561,8 +2561,8 @@
     "chishtiabad": {
       "id": "chishtiabad",
       "name": "Chishtiabad",
-      "latitude": 33.685,
-      "longitude": 73.083,
+      "latitude": 33.62235914910118,
+      "longitude": 72.97551693016543,
       "routes_serving": [
         "fr_09"
       ],
@@ -2576,8 +2576,8 @@
     "golra_morh": {
       "id": "golra_morh",
       "name": "Golra Morh Metro Station",
-      "latitude": 33.640739958006314,
-      "longitude": 72.96167872395185,
+      "latitude": 33.64068190616236,
+      "longitude": 72.96169294133917,
       "routes_serving": [
         "fr_09",
         "orange_line"
@@ -2595,8 +2595,8 @@
     "home_of_military_transport": {
       "id": "home_of_military_transport",
       "name": "Home of Military Transport",
-      "latitude": 33.646,
-      "longitude": 72.99,
+      "latitude": 33.63446041895948,
+      "longitude": 72.96680827497872,
       "routes_serving": [
         "fr_09"
       ],
@@ -2610,8 +2610,8 @@
     "barakahu": {
       "id": "barakahu",
       "name": "Barakahu",
-      "latitude": 33.778,
-      "longitude": 73.149,
+      "latitude": 33.735497639838265,
+      "longitude": 73.1653332236176,
       "routes_serving": [
         "fr_14"
       ],
@@ -2625,8 +2625,8 @@
     "shahdara": {
       "id": "shahdara",
       "name": "Shahdara",
-      "latitude": 33.776,
-      "longitude": 73.147,
+      "latitude": 33.73491699754946,
+      "longitude": 73.1591076957223,
       "routes_serving": [
         "fr_14"
       ],
@@ -2640,8 +2640,8 @@
     "malpur": {
       "id": "malpur",
       "name": "Malpur",
-      "latitude": 33.774,
-      "longitude": 73.145,
+      "latitude": 33.72992318391457,
+      "longitude": 73.14446747498076,
       "routes_serving": [
         "fr_14"
       ],
@@ -2655,8 +2655,8 @@
     "lake_view_park": {
       "id": "lake_view_park",
       "name": "Lake View Park",
-      "latitude": 33.772,
-      "longitude": 73.143,
+      "latitude": 33.722883791026305,
+      "longitude": 73.1352601487836,
       "routes_serving": [
         "fr_14"
       ],
@@ -2670,8 +2670,8 @@
     "dhokri_stop": {
       "id": "dhokri_stop",
       "name": "Dhokri Stop",
-      "latitude": 33.77,
-      "longitude": 73.141,
+      "latitude": 33.71144018613291,
+      "longitude": 73.10611361247028,
       "routes_serving": [
         "fr_14"
       ],
@@ -2685,8 +2685,8 @@
     "barakahu_terminal": {
       "id": "barakahu_terminal",
       "name": "Barakahu Terminal",
-      "latitude": 33.778,
-      "longitude": 73.149,
+      "latitude": 33.735497639838265,
+      "longitude": 73.1653332236176,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2700,8 +2700,8 @@
     "mangu_town": {
       "id": "mangu_town",
       "name": "Mangu Town",
-      "latitude": 33.78,
-      "longitude": 73.151,
+      "latitude": 33.73627356624121,
+      "longitude": 73.1721032067579,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2715,8 +2715,8 @@
     "col_ammanullah_road": {
       "id": "col_ammanullah_road",
       "name": "Col. Ammanullah Road",
-      "latitude": 33.782,
-      "longitude": 73.153,
+      "latitude": 33.73684207209912,
+      "longitude": 73.1747230502809,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2730,8 +2730,8 @@
     "athal_chowk": {
       "id": "athal_chowk",
       "name": "Athal Chowk",
-      "latitude": 33.784,
-      "longitude": 73.155,
+      "latitude": 33.73972547946584,
+      "longitude": 73.17988434320343,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2745,8 +2745,8 @@
     "barakahu_bazar": {
       "id": "barakahu_bazar",
       "name": "Barakahu Bazar",
-      "latitude": 33.786,
-      "longitude": 73.157,
+      "latitude": 33.74296589046329,
+      "longitude": 73.18494225120912,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2760,8 +2760,8 @@
     "bhera_pull": {
       "id": "bhera_pull",
       "name": "Bhera Pull",
-      "latitude": 33.788,
-      "longitude": 73.159,
+      "latitude": 33.74495242285442,
+      "longitude": 73.18903166333249,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2775,8 +2775,8 @@
     "nai_abadi": {
       "id": "nai_abadi",
       "name": "Nai Abadi",
-      "latitude": 33.79,
-      "longitude": 73.161,
+      "latitude": 33.74826270686837,
+      "longitude": 73.1941912244859,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2790,8 +2790,8 @@
     "traders_colony": {
       "id": "traders_colony",
       "name": "Traders Colony",
-      "latitude": 33.792,
-      "longitude": 73.163,
+      "latitude": 33.753819249837505,
+      "longitude": 73.2053793826709,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2805,8 +2805,8 @@
     "akbar_niazi_hospital": {
       "id": "akbar_niazi_hospital",
       "name": "Akbar Niazi Hospital",
-      "latitude": 33.794,
-      "longitude": 73.165,
+      "latitude": 33.75639216654366,
+      "longitude": 73.210149401866,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2820,8 +2820,8 @@
     "phulgran": {
       "id": "phulgran",
       "name": "Phulgran",
-      "latitude": 33.796,
-      "longitude": 73.167,
+      "latitude": 33.757528124890136,
+      "longitude": 73.21274960051353,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2835,8 +2835,8 @@
     "dhok_badam": {
       "id": "dhok_badam",
       "name": "Dhok Badam",
-      "latitude": 33.798,
-      "longitude": 73.169,
+      "latitude": 33.75877923391185,
+      "longitude": 73.21550644260951,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2850,8 +2850,8 @@
     "punjab_college": {
       "id": "punjab_college",
       "name": "Punjab College",
-      "latitude": 33.8,
-      "longitude": 73.171,
+      "latitude": 33.76122652592548,
+      "longitude": 73.21798884194057,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2865,8 +2865,8 @@
     "al_wadi_colony": {
       "id": "al_wadi_colony",
       "name": "Al Wadi Colony",
-      "latitude": 33.802,
-      "longitude": 73.173,
+      "latitude": 33.762573768209634,
+      "longitude": 73.21933018733174,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2880,8 +2880,8 @@
     "satra_meel": {
       "id": "satra_meel",
       "name": "Satra Meel",
-      "latitude": 33.804,
-      "longitude": 73.175,
+      "latitude": 33.764047132524766,
+      "longitude": 73.22300219618715,
       "routes_serving": [
         "fr_14a"
       ],
@@ -2895,8 +2895,8 @@
     "fazaia": {
       "id": "fazaia",
       "name": "Fazaia",
-      "latitude": 33.63,
-      "longitude": 73.042,
+      "latitude": 33.620769397121414,
+      "longitude": 73.12042150978492,
       "routes_serving": [
         "fr_15"
       ],
@@ -2910,8 +2910,8 @@
     "gangal": {
       "id": "gangal",
       "name": "Gangal",
-      "latitude": 33.628,
-      "longitude": 73.04,
+      "latitude": 33.61283553089856,
+      "longitude": 73.12595758898938,
       "routes_serving": [
         "fr_15"
       ],
@@ -2925,8 +2925,8 @@
     "koral_town": {
       "id": "koral_town",
       "name": "Koral Town",
-      "latitude": 33.626,
-      "longitude": 73.038,
+      "latitude": 33.60407883994751,
+      "longitude": 73.13252363665529,
       "routes_serving": [
         "fr_15"
       ],
@@ -2940,8 +2940,8 @@
     "gulberg": {
       "id": "gulberg",
       "name": "Gulberg",
-      "latitude": 33.624,
-      "longitude": 73.036,
+      "latitude": 33.59507526959182,
+      "longitude": 73.13927457564758,
       "routes_serving": [
         "fr_15"
       ],
@@ -2955,8 +2955,8 @@
     "pagh_chowk": {
       "id": "pagh_chowk",
       "name": "Pagh Chowk",
-      "latitude": 33.622,
-      "longitude": 73.034,
+      "latitude": 33.584989746096,
+      "longitude": 73.14621363147394,
       "routes_serving": [
         "fr_15"
       ],
@@ -2970,8 +2970,8 @@
     "pwd_housing_society": {
       "id": "pwd_housing_society",
       "name": "PWD Housing Society",
-      "latitude": 33.62,
-      "longitude": 73.032,
+      "latitude": 33.5757829004841,
+      "longitude": 73.1529865617986,
       "routes_serving": [
         "fr_15"
       ],
@@ -2985,8 +2985,8 @@
     "soan_gardens_e_block": {
       "id": "soan_gardens_e_block",
       "name": "Soan Gardens E Block",
-      "latitude": 33.618,
-      "longitude": 73.03,
+      "latitude": 33.56761952166926,
+      "longitude": 73.1590876857792,
       "routes_serving": [
         "fr_15"
       ],
@@ -3000,8 +3000,8 @@
     "soan_gardens_g_block": {
       "id": "soan_gardens_g_block",
       "name": "Soan Gardens G Block",
-      "latitude": 33.616,
-      "longitude": 73.028,
+      "latitude": 33.56122981858447,
+      "longitude": 73.16388484403411,
       "routes_serving": [
         "fr_15"
       ],
@@ -3015,8 +3015,8 @@
     "soan_gardens_h_block": {
       "id": "soan_gardens_h_block",
       "name": "Soan Gardens H Block",
-      "latitude": 33.614,
-      "longitude": 73.026,
+      "latitude": 33.556644092819006,
+      "longitude": 73.16734214758053,
       "routes_serving": [
         "fr_15"
       ],
@@ -3030,8 +3030,8 @@
     "river_gardens": {
       "id": "river_gardens",
       "name": "River Gardens",
-      "latitude": 33.612,
-      "longitude": 73.024,
+      "latitude": 33.55031440649514,
+      "longitude": 73.17214273881568,
       "routes_serving": [
         "fr_15"
       ],
@@ -3045,8 +3045,8 @@
     "kaak_pul": {
       "id": "kaak_pul",
       "name": "Kaak Pul",
-      "latitude": 33.61,
-      "longitude": 73.022,
+      "latitude": 33.541540392663094,
+      "longitude": 73.1786745303829,
       "routes_serving": [
         "fr_15"
       ],
@@ -3060,8 +3060,8 @@
     "dha_gate_08": {
       "id": "dha_gate_08",
       "name": "DHA Gate 08",
-      "latitude": 33.608,
-      "longitude": 73.02,
+      "latitude": 33.538758445405364,
+      "longitude": 73.18016990388493,
       "routes_serving": [
         "fr_15"
       ],
@@ -3075,8 +3075,8 @@
     "dha_gate_07": {
       "id": "dha_gate_07",
       "name": "DHA Gate 07",
-      "latitude": 33.606,
-      "longitude": 73.018,
+      "latitude": 33.53331629060999,
+      "longitude": 73.1806106080966,
       "routes_serving": [
         "fr_15"
       ],
@@ -3090,8 +3090,8 @@
     "suparco": {
       "id": "suparco",
       "name": "SUPARCO",
-      "latitude": 33.604,
-      "longitude": 73.016,
+      "latitude": 33.52010801924289,
+      "longitude": 73.17886918123955,
       "routes_serving": [
         "fr_15"
       ],
@@ -3105,170 +3105,11 @@
     "t__chowk": {
       "id": "t__chowk",
       "name": "T- Chowk",
-      "latitude": 33.602,
-      "longitude": 73.014,
+      "latitude": 33.51187400906095,
+      "longitude": 73.17892381524551,
       "routes_serving": [
         "fr_15"
       ],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "g_13_metro_station": {
-      "id": "g_13_metro_station",
-      "name": "G-13 Metro Station",
-      "latitude": 33.642,
-      "longitude": 72.986,
-      "routes_serving": [],
-      "type": "major_hub",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter",
-        "ticket_counter",
-        "lighting",
-        "waiting_area"
-      ],
-      "wheelchair_accessible": true
-    },
-    "hammad_uddin_road": {
-      "id": "hammad_uddin_road",
-      "name": "Hammad Uddin Road",
-      "latitude": 33.68,
-      "longitude": 73.04,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "federal_government_college": {
-      "id": "federal_government_college",
-      "name": "Federal Government College",
-      "latitude": 33.682,
-      "longitude": 73.038,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "shah_allah_ditta": {
-      "id": "shah_allah_ditta",
-      "name": "Shah Allah Ditta",
-      "latitude": 33.664,
-      "longitude": 73.056,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "sangjani": {
-      "id": "sangjani",
-      "name": "Sangjani",
-      "latitude": 33.632,
-      "longitude": 72.972,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "b_17_gate_no_1": {
-      "id": "b_17_gate_no_1",
-      "name": "B-17 Gate no. 1",
-      "latitude": 33.628,
-      "longitude": 72.968,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "b_17_gate_no_2": {
-      "id": "b_17_gate_no_2",
-      "name": "B-17 Gate no. 2",
-      "latitude": 33.626,
-      "longitude": 72.966,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "margalla": {
-      "id": "margalla",
-      "name": "Margalla",
-      "latitude": 33.735,
-      "longitude": 73.028,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "taxila_bypass": {
-      "id": "taxila_bypass",
-      "name": "Taxila Bypass",
-      "latitude": 33.742,
-      "longitude": 72.835,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "wahdat_colony": {
-      "id": "wahdat_colony",
-      "name": "Wahdat Colony",
-      "latitude": 33.745,
-      "longitude": 72.838,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "timber_market": {
-      "id": "timber_market",
-      "name": "Timber Market",
-      "latitude": 33.748,
-      "longitude": 72.841,
-      "routes_serving": [],
-      "type": "regular_stop",
-      "is_transfer_point": false,
-      "amenities": [
-        "shelter"
-      ],
-      "wheelchair_accessible": false
-    },
-    "taxila": {
-      "id": "taxila",
-      "name": "Taxila",
-      "latitude": 33.746,
-      "longitude": 72.833,
-      "routes_serving": [],
       "type": "regular_stop",
       "is_transfer_point": false,
       "amenities": [
@@ -3298,8 +3139,8 @@
     "national_highway_authority": {
       "id": "national_highway_authority",
       "name": "National Highway Authority",
-      "latitude": 33.677478621398144,
-      "longitude": 73.03477253400354,
+      "latitude": 33.677293950787515,
+      "longitude": 73.0347404010865,
       "routes_serving": [
         "orange_line"
       ],
