@@ -151,8 +151,8 @@
                         👋 Hi! I'm your metro guide. Try saying:<br>
                         <div class="suggestion-chips">
                             <span class="chip" onclick="useSuggestion(this)">NUST to PIMS</span>
-                            <span class="chip" onclick="useSuggestion(this)">Fast route from Faizabad to F-9 Park</span>
-                            <span class="chip" onclick="useSuggestion(this)">Cheap route from NUST to PIMS</span>
+                            <span class="chip" onclick="useSuggestion(this)">Faizabad to COMSATS via Zero Point</span>
+                            <span class="chip" onclick="useSuggestion(this)">N-5 to F-9 Park avoid Saddar</span>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,8 @@
                 <button id="send-btn">Send</button>
             </div>
         </div>
-        <p class="examples" style="margin-top: 1rem;">💡 Tip: You can say "fast", "cheap", "avoid [station]"</p>
+        <p class="examples" style="margin-top: 1rem;">💡 Tip: You can say "via [station]", "avoid [station]", or
+            "passing through [station]"</p>
     </main>
 
     <script type="module">
@@ -210,17 +211,41 @@
                 return;
             }
 
-            addBotMessage(`✅ From: <b>${parsed.sourceName}</b> → To: <b>${parsed.destinationName}</b><br>🚀 Strategy: ${parsed.strategy === 'budget' ? 'Cheapest' : 'Fastest'}`);
+            // Build constraint summary
+            let constraintInfo = '';
+            if (parsed.constraints.via.length > 0) {
+                const viaNames = parsed.constraints.via.map(id => graph.nodes[id]?.name || id).join(', ');
+                constraintInfo += `<br>📍 Via: ${viaNames}`;
+            }
+            if (parsed.constraints.avoid.length > 0) {
+                const avoidNames = parsed.constraints.avoid.map(id => graph.nodes[id]?.name || id).join(', ');
+                constraintInfo += `<br>🚫 Avoiding: ${avoidNames}`;
+            }
+
+            addBotMessage(`✅ From: <b>${parsed.sourceName}</b> → To: <b>${parsed.destinationName}</b>${constraintInfo}`);
 
             setTimeout(() => {
-                addBotMessage('🔍 Finding route...');
+                addBotMessage('🔍 Finding optimal route...');
                 setTimeout(() => {
-                    const result = pathfinder.findPath(parsed.source, parsed.destination, { strategy: parsed.strategy, avoidNodes: parsed.entities.avoid });
+                    const result = pathfinder.findPath(parsed.source, parsed.destination, {
+                        avoidNodes: parsed.constraints.avoid,
+                        viaNodes: parsed.constraints.via
+                    });
                     if (result) {
-                        addBotMessage(`✅ Route found! ${result.path.length} stops, ~${Math.round(result.cost)} min<br>Taking you to the map...`);
-                        localStorage.setItem('unigo_trip', JSON.stringify({ start: parsed.source, end: parsed.destination, startName: parsed.sourceName, endName: parsed.destinationName, strategy: parsed.strategy }));
+                        let routeInfo = `✅ Route found! ${result.path.length} stops, ~${Math.round(result.cost)} min`;
+                        if (result.transfers > 0) routeInfo += `, ${result.transfers} transfer${result.transfers > 1 ? 's' : ''}`;
+                        routeInfo += '<br>Taking you to the map...';
+                        addBotMessage(routeInfo);
+                        localStorage.setItem('unigo_trip', JSON.stringify({
+                            start: parsed.source,
+                            end: parsed.destination,
+                            startName: parsed.sourceName,
+                            endName: parsed.destinationName,
+                            avoidNodes: parsed.constraints.avoid,
+                            viaNodes: parsed.constraints.via
+                        }));
                         setTimeout(() => { window.location.href = 'route.html'; }, 2000);
-                    } else { addBotMessage('❌ No route found.'); }
+                    } else { addBotMessage('❌ No route found. Try removing some constraints.'); }
                 }, 500);
             }, 300);
         }

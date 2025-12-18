@@ -1,5 +1,5 @@
 // src/js/core/astar.js
-// Route-aware A* pathfinding - tracks (node, route) to minimize transfers
+// Route-aware A* pathfinding with via/include support
 import PriorityQueue from '../utils/priorityQueue.js';
 import { haversineDistance } from '../utils/distance.js';
 
@@ -15,8 +15,8 @@ class AStarPathfinder {
             }
         }
 
-        this.TRANSFER_PENALTY_TIME = 8;
-        this.TRANSFER_PENALTY_BUDGET = 50;
+        // Transfer penalty (time in minutes)
+        this.TRANSFER_PENALTY = 5;
     }
 
     makeState(nodeId, routeId) {
@@ -31,10 +31,92 @@ class AStarPathfinder {
         };
     }
 
+    /**
+     * Find optimal path with constraints
+     * @param {string} startNodeId - Starting station ID
+     * @param {string} endNodeId - Destination station ID
+     * @param {Object} options - Options including avoidNodes and viaNodes
+     */
     findPath(startNodeId, endNodeId, options = {}) {
-        const strategy = options.strategy || 'time';
         const avoidNodes = new Set(options.avoidNodes || []);
+        const viaNodes = options.viaNodes || [];
 
+        if (!this.nodes[startNodeId] || !this.nodes[endNodeId]) return null;
+        if (avoidNodes.has(startNodeId) || avoidNodes.has(endNodeId)) return null;
+
+        // If we have via/include nodes, chain multiple paths
+        if (viaNodes.length > 0) {
+            return this.findPathThroughVia(startNodeId, endNodeId, viaNodes, avoidNodes);
+        }
+
+        // Direct path finding
+        return this.findDirectPath(startNodeId, endNodeId, avoidNodes);
+    }
+
+    /**
+     * Find path that passes through specified via nodes in order
+     */
+    findPathThroughVia(startNodeId, endNodeId, viaNodes, avoidNodes) {
+        // Build waypoints: start -> via1 -> via2 -> ... -> end
+        const waypoints = [startNodeId, ...viaNodes, endNodeId];
+
+        let fullPath = [];
+        let fullSegments = [];
+        let totalCost = 0;
+        let totalTransfers = 0;
+
+        // Find path between each pair of consecutive waypoints
+        for (let i = 0; i < waypoints.length - 1; i++) {
+            const segmentResult = this.findDirectPath(waypoints[i], waypoints[i + 1], avoidNodes);
+
+            if (!segmentResult) {
+                // No path found for this segment
+                console.warn(`No path found from ${waypoints[i]} to ${waypoints[i + 1]}`);
+                return null;
+            }
+
+            // Merge paths (avoid duplicating the connection point)
+            if (i === 0) {
+                fullPath = [...segmentResult.path];
+            } else {
+                // Skip first node of segment (it's the same as last node of previous segment)
+                fullPath.push(...segmentResult.path.slice(1));
+            }
+
+            // Merge route segments
+            if (i === 0) {
+                fullSegments = [...segmentResult.routeSegments];
+            } else {
+                // Check if we can merge with previous segment (same route)
+                const lastSegment = fullSegments[fullSegments.length - 1];
+                const firstNewSegment = segmentResult.routeSegments[0];
+
+                if (lastSegment && firstNewSegment && lastSegment.routeId === firstNewSegment.routeId) {
+                    // Extend the last segment
+                    lastSegment.toNode = firstNewSegment.toNode;
+                    fullSegments.push(...segmentResult.routeSegments.slice(1));
+                } else {
+                    fullSegments.push(...segmentResult.routeSegments);
+                }
+            }
+
+            totalCost += segmentResult.cost;
+            totalTransfers += segmentResult.transfers;
+        }
+
+        return {
+            path: fullPath,
+            routeSegments: fullSegments,
+            cost: totalCost,
+            transfers: Math.max(0, fullSegments.length - 1),
+            viaNodes: viaNodes
+        };
+    }
+
+    /**
+     * Find direct path between two nodes (no via constraints)
+     */
+    findDirectPath(startNodeId, endNodeId, avoidNodes) {
         if (!this.nodes[startNodeId] || !this.nodes[endNodeId]) return null;
         if (avoidNodes.has(startNodeId) || avoidNodes.has(endNodeId)) return null;
 
@@ -52,8 +134,6 @@ class AStarPathfinder {
             openSet.enqueue(startState, fScore[startState]);
         }
 
-        let bestResult = null;
-
         while (!openSet.isEmpty()) {
             const currentState = openSet.dequeue();
             if (closedSet.has(currentState)) continue;
@@ -64,14 +144,7 @@ class AStarPathfinder {
             if (currentNode === endNodeId) {
                 const { path, routeSegments } = this.reconstructPathWithRoutes(cameFrom, currentState);
                 const transfers = Math.max(0, routeSegments.length - 1);
-
-                if (!bestResult || transfers < bestResult.transfers ||
-                    (transfers === bestResult.transfers && gScore[currentState] < bestResult.cost)) {
-                    bestResult = { path, routeSegments, cost: gScore[currentState], transfers };
-                }
-
-                if (strategy === 'time') break;
-                continue;
+                return { path, routeSegments, cost: gScore[currentState], transfers };
             }
 
             for (const connection of (this.adjacency[currentNode] || [])) {
@@ -90,8 +163,9 @@ class AStarPathfinder {
 
                 let moveCost = edge.time_minutes || (edge.distance_km * 2) || 1;
 
+                // Add transfer penalty when switching routes
                 if (!isSameRoute) {
-                    moveCost += (strategy === 'budget') ? this.TRANSFER_PENALTY_BUDGET : this.TRANSFER_PENALTY_TIME;
+                    moveCost += this.TRANSFER_PENALTY;
                 }
 
                 const tentativeG = (gScore[currentState] ?? Infinity) + moveCost;
@@ -109,7 +183,7 @@ class AStarPathfinder {
             }
         }
 
-        return bestResult;
+        return null;
     }
 
     heuristic(nodeId, goalId) {
@@ -146,16 +220,12 @@ class AStarPathfinder {
                 path.push(nodeId);
             }
 
-            // Track route segments
             if (routeId !== 'START') {
                 if (!currentSegment || currentSegment.routeId !== routeId) {
-                    // Route change - close previous segment at previous node
                     if (currentSegment) {
                         currentSegment.toNode = prevNodeId || nodeId;
                         routeSegments.push(currentSegment);
                     }
-                    // New segment STARTS at the transfer point (previous node)
-                    // This is where the user boards the new bus
                     const transferPoint = prevNodeId || nodeId;
                     currentSegment = { routeId, fromNode: transferPoint, toNode: nodeId };
                 } else {
