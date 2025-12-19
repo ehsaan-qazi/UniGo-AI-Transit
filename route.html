@@ -98,7 +98,8 @@
                 });
 
                 if (result) {
-                    routeMeta.textContent = `${result.path.length} stops • ${result.transfers} transfer${result.transfers !== 1 ? 's' : ''} • ~${Math.round(result.cost)} mins`;
+                    const distanceKm = result.distance?.toFixed(1) || '?';
+                    routeMeta.textContent = `${result.path.length} stops • ${result.transfers} transfer${result.transfers !== 1 ? 's' : ''} • ${distanceKm} km`;
                     displayRouteOnMap(result.path, graph.nodes);
                     routeSteps.innerHTML = '';
 

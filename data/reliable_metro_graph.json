@@ -313,8 +313,8 @@
     "katchery": {
       "id": "katchery",
       "name": "Katchery",
-      "latitude": 33.71167004345022,
-      "longitude": 73.0396811906576,
+      "latitude": 33.7019007985139,
+      "longitude": 73.04132062656583,
       "routes_serving": [
         "fr_03a",
         "red_line"
@@ -571,8 +571,8 @@
     "pully_stop": {
       "id": "pully_stop",
       "name": "Pully Stop",
-      "latitude": 33.70787069043686,
-      "longitude": 73.07015990743906,
+      "latitude": 33.63823467002523,
+      "longitude": 73.03752990862037,
       "routes_serving": [
         "fr_09",
         "fr_04",

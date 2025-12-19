@@ -104,10 +104,24 @@ class AStarPathfinder {
             totalTransfers += segmentResult.transfers;
         }
 
+        // Calculate total distance from path
+        let totalDistance = 0;
+        for (let i = 0; i < fullPath.length - 1; i++) {
+            const from = this.nodes[fullPath[i]];
+            const to = this.nodes[fullPath[i + 1]];
+            if (from && to) {
+                totalDistance += haversineDistance(
+                    [from.latitude, from.longitude],
+                    [to.latitude, to.longitude]
+                );
+            }
+        }
+
         return {
             path: fullPath,
             routeSegments: fullSegments,
             cost: totalCost,
+            distance: totalDistance,
             transfers: Math.max(0, fullSegments.length - 1),
             viaNodes: viaNodes
         };
@@ -144,7 +158,21 @@ class AStarPathfinder {
             if (currentNode === endNodeId) {
                 const { path, routeSegments } = this.reconstructPathWithRoutes(cameFrom, currentState);
                 const transfers = Math.max(0, routeSegments.length - 1);
-                return { path, routeSegments, cost: gScore[currentState], transfers };
+
+                // Calculate total distance
+                let totalDistance = 0;
+                for (let i = 0; i < path.length - 1; i++) {
+                    const from = this.nodes[path[i]];
+                    const to = this.nodes[path[i + 1]];
+                    if (from && to) {
+                        totalDistance += haversineDistance(
+                            [from.latitude, from.longitude],
+                            [to.latitude, to.longitude]
+                        );
+                    }
+                }
+
+                return { path, routeSegments, cost: gScore[currentState], distance: totalDistance, transfers };
             }
 
             for (const connection of (this.adjacency[currentNode] || [])) {

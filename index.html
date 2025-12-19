@@ -232,7 +232,8 @@
                         viaNodes: parsed.constraints.via
                     });
                     if (result) {
-                        let routeInfo = `✅ Route found! ${result.path.length} stops, ~${Math.round(result.cost)} min`;
+                        const distanceKm = result.distance?.toFixed(1) || '?';
+                        let routeInfo = `✅ Route found! ${result.path.length} stops, ${distanceKm} km`;
                         if (result.transfers > 0) routeInfo += `, ${result.transfers} transfer${result.transfers > 1 ? 's' : ''}`;
                         routeInfo += '<br>Taking you to the map...';
                         addBotMessage(routeInfo);
