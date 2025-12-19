@@ -17,6 +17,14 @@ class IntentParser {
         // Constraint keywords
         this.avoidKeywords = ['avoid', 'skip', "don't go", 'block', 'bypass', 'exclude', 'not through', 'stay away', 'without'];
         this.viaKeywords = ['via', 'through', 'passing', 'include', 'stop at', 'go by', 'pass through', 'must go', 'stopping at'];
+
+        // Location aliases - nearby landmarks that map to metro stations
+        // Format: { 'alias keyword': { stationId: 'id', displayName: 'Name to show user' } }
+        this.locationAliases = {
+            'centaurus': { stationId: 'pims', displayName: 'Centaurus Mall' },
+            'centaurus mall': { stationId: 'pims', displayName: 'Centaurus Mall' },
+            'the centaurus': { stationId: 'pims', displayName: 'Centaurus Mall' }
+        };
     }
 
     parse(text) {
@@ -65,6 +73,17 @@ class IntentParser {
     findStation(text) {
         if (!text) return null;
         const cleanText = text.toLowerCase().trim();
+
+        // Check location aliases first (e.g., Centaurus Mall -> PIMS)
+        for (const [alias, mapping] of Object.entries(this.locationAliases)) {
+            if (cleanText.includes(alias) || alias.includes(cleanText)) {
+                const station = this.stations.find(s => s.id === mapping.stationId);
+                if (station) {
+                    // Return station with alias display name
+                    return { ...station, name: mapping.displayName, isAlias: true };
+                }
+            }
+        }
 
         // Exact ID match
         for (const station of this.stations) {
